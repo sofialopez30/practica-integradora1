@@ -8,21 +8,20 @@
 </head>
 <body>
     <header>
-        <img src="../OneDrive/Programación I/practica-integradora1/CVS MUSIC.pn<s>" alt="Foto logo">
-
+        <img src="./fotos/CVS MUSIC.png" alt="">
         <header>
-            <select name="Página"></select>
-                <option value="Home">HOME</option>
-                <option value="Dettale de canciones">DETALLE DE CANCIONES</option>
-                <option value="Detalle de disco">DET</option>
+            <form action="./search-results.html" method="GET">
+                <input type=" text" name="busqueda" value="" placeholder="Búsqueda"> 
+                <button type="submit">Enviar</button>
+            </form>
             <ul>
-                <li>HOME</li>
-                <li>DETALLE DE CANCIONES</li>
-                <li>DETALLE DE DISCO</li>
-                <li>DESTALLE DEL CANTANTE</li>
-                <li>PLAYLIST</li>
-                <li>DETALLE DEL GÉNERO</li>
-                <li>RESULTADO</li>
+                <li> <a href="./index.html">HOME</a></li>
+                <li> <a href="./detail-track.html">DETALLE DE CANCIONES</a></li>
+                <li> <a href="./detail-album.html">DETALLE DE DISCO</a></li>
+                <li> <a href="./detail-artist.html">DETALLE DE CANTANTE</a></li>
+                <li> <a href="./playlist.html">PLAYLIST</a></li>
+                <li> <a href="./genres.html">GENEROS</a></li>
+                <li><a href="./detail-genres.html">DETALLE DE GENEROS</a></li>
             </ul>
         </header>
     </header>
