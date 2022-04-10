@@ -91,10 +91,41 @@ a:link, a:visited, a:active{
     margin:10px 10px 0px 10px;
 }
 
+
+
+
+index
 .home{
     color: #0fff20; 
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     padding: 40px;
    
+}
+.titulos{
+    color: #0fff20; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 30px;
+}
+.content{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-around ;
+    border-radius:7px;
+    color: #0fff20; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.fotos{
+    width:125px;
+    height:125px;
+    margin: 20px;
+}
+.caca{
+    float: right;
+    padding: 20px;
+    text-align: center;
 }
