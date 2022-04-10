@@ -7,12 +7,16 @@ body {
     background-color: black;
 }
 .header {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 70px;
     padding: 5px 30px 5px 30px;
     border-radius:15px;
-    color: rgb(255,111,0);
+    color: #0fff20;;
     box-shadow: 10px 10px 0px 0px rgb(245,11,134)
+}
+
+.headertop{
+    border: 5px solid #0fff20;
 }
 
 .imagenlogo {
@@ -45,9 +49,8 @@ body {
     flex-direction:row;
     justify-content:space-around ;
     border-radius:7px;
-    font-family: 'Oswald', sans-serif;
-    color: rgb(255,111,0);
-    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
     background-color: rgb(15, 14, 15);
 
 }
@@ -64,14 +67,14 @@ body {
 
 a:link, a:visited, a:active{
     text-decoration:none;
-    color: rgb(255,111,0); 
+    color: #0fff20; 
     box-shadow: 5px 5px 0px 0px rgb(245,11,134);
     border-radius:15px;
 }
 
 .link {
     list-style-type: none;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     padding: 5px 7px 5px 7px;
 }
 
@@ -83,6 +86,6 @@ a:link, a:visited, a:active{
 }
 
 .nombres {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin:10px 10px 0px 10px;
 }
