@@ -2,6 +2,9 @@
     box-sizing:border-box;
 }
 
+body {
+    background-image: url(../fotos/Diseño\ sin\ título.png)
+}
 .header {
     font-family:"Playfair Display ", serif;
     font-size: 70px;
