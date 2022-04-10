@@ -2,18 +2,21 @@
     box-sizing:border-box;
 }
 
-body{
-    background-color: rgb(227, 214, 243);
+body {
+    background-color: #12325b;
+    background-color: black;
+}
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    padding: 5px 30px 5px 30px;
+    border-radius:15px;
+    color: #0fff20;;
+    box-shadow: 5px 5px 0px 0px rgb(245,11,134)
 }
 
-.header {
-    font-family:"Playfair Display ", serif;
-    font-size: 70px;
-    font-style:italic;
-    padding: 5px 30px 5px 30px;
-    background-color: antiquewhite;
-    border:solid 2px black;
-    border-radius:15px;
+.headertop{
+    border: 5px solid #0fff20;
 }
 
 .imagenlogo {
@@ -21,7 +24,7 @@ body{
     width:125px;
     height:125px;
     margin:30px 0px 0px 10px;
-    border:solid 2px black;
+    border:solid 1px;
 }
 
 .top {
@@ -44,13 +47,17 @@ body{
     display:flex;
     flex-wrap:wrap;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content:space-around ;
+    border-radius:7px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: rgb(15, 14, 15);
+
 }
 
+
 .search {
-    border: solid 2px black;
-    font-family: "Playfair Display", serif;
-    background-color:antiquewhite;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 5px;
 }
 
@@ -58,18 +65,18 @@ body{
     padding: 3px 5px 3px 5px;
 }
 
-a:link, a:visited, a:active {
+a:link, a:visited, a:active{
     text-decoration:none;
-    color:black;
+    color: #0fff20; 
+    box-shadow: 0px 2px 0px 0px rgb(245,11,134);
+    border-radius: 20px;
+    border-radius:7px;
 }
 
 .link {
     list-style-type: none;
-    font-family: 'Playfair Display', serif;
-    background-color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
     padding: 5px 7px 5px 7px;
-    border:solid 2px black;
-    border-radius:7px;
 }
 
 .footer {
@@ -80,6 +87,14 @@ a:link, a:visited, a:active {
 }
 
 .nombres {
-    font-family: "Playfair Display", serif;
+    font-family: 'Josefin Sans', sans-serif;
     margin:10px 10px 0px 10px;
+}
+
+.home{
+    color: #0fff20; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    padding: 40px;
+   
 }
