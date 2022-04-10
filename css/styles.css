@@ -3,13 +3,16 @@
 }
 
 body {
-    background-image: url(../fotos/Diseño\ sin\ título.png)
+    background-color: #12325b;
+    background-color: black;
 }
 .header {
-    font-family:"Playfair Display ", serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 70px;
     padding: 5px 30px 5px 30px;
     border-radius:15px;
+    color: rgb(255,111,0);
+    box-shadow: 10px 10px 0px 0px rgb(245,11,134)
 }
 
 .imagenlogo {
@@ -17,7 +20,7 @@ body {
     width:125px;
     height:125px;
     margin:30px 0px 0px 10px;
-    border:solid 1px black;
+    border:solid 1px;
 }
 
 .top {
@@ -42,12 +45,16 @@ body {
     flex-direction:row;
     justify-content:space-around ;
     border-radius:7px;
-    border: solid 1px black;
-    background-color: antiquewhite;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255,111,0);
+    font-size: 25px;
+    background-color: rgb(15, 14, 15);
+
 }
 
+
 .search {
-    font-family: "Playfair Display", serif;
+    font-family: 'Oswald', sans-serif;
     border-radius: 5px;
 }
 
@@ -55,14 +62,16 @@ body {
     padding: 3px 5px 3px 5px;
 }
 
-a:link, a:visited, a:active {
+a:link, a:visited, a:active{
     text-decoration:none;
-    color:black;
+    color: rgb(255,111,0); 
+    box-shadow: 5px 5px 0px 0px rgb(245,11,134);
+    border-radius:15px;
 }
 
 .link {
     list-style-type: none;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Oswald', sans-serif;
     padding: 5px 7px 5px 7px;
 }
 
@@ -74,6 +83,6 @@ a:link, a:visited, a:active {
 }
 
 .nombres {
-    font-family: "Playfair Display", serif;
+    font-family: 'Oswald', sans-serif;
     margin:10px 10px 0px 10px;
 }
