@@ -67,3 +67,15 @@ a:link, a:visited, a:active {
     border:solid 2px black;
     border-radius:7px;
 }
+
+.footer {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.nombres {
+    font-family: "Playfair Display", serif;
+    margin:10px 10px 0px 10px;
+}
