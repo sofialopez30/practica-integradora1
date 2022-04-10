@@ -4,17 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/d7508afee2.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <h2>HOME</h2>
+    <header class="top">
+        <img src="./fotos/CVS MUSIC.png" alt="" class="imagenlogo top">
+        <h1 class="header top">// CVS MUSIC //</h1>
+         <form action="./search-results.html" method="GET" class="funcionaporfa">
+            <input type=" text" name="busqueda" value="" placeholder="Búsqueda" class="top search">  
+            <button><span class="button top search lupita"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </header>
+        <nav>
+            <ul class="navegacion">
+                <li class="link"> <a href="./index.html">HOME</a></li>
+                <li class="link"> <a href="./detail-track.html">DETALLE DE CANCIONES</a></li>
+                <li class="link"> <a href="./detail-album.html">DETALLE DE DISCO</a></li>
+                <li class="link"> <a href="./detail-artist.html">DETALLE DE CANTANTE</a></li>
+                <li class="link"> <a href="./playlist.html">PLAYLIST</a></li>
+                <li class="link"> <a href="./genres.html">GENEROS</a></li>
+                <li class="link"><a href="./detail-genres.html">DETALLE DE GENEROS</a></li>
+            </ul>
+        </nav>
+
+    <h2 class="home">HOME</h2>
     <section>
-        <h3>CANCIONES</h3>
+        <h3 class="titulos">CANCIONES</h3>
         <section class="content track">
             <article>
                 <img src="../practica-integradora1/fotos/imgintegrador/497691461002421.jpg.webp"alt="">
                 <p>Stolen Dance -Milky Chance <a href=""></a></p>
-            </article class="content track1" >
+            </article class=" uno content track" >
             <article>
                 <img src="../practica-integradora1/fotos/imgintegrador/8e9b587a6f577478e9e6480235811f7d.jpg.webp" alt="">
                 <p>Riptide -Vance Joy  <a href=""></a></p>
@@ -35,7 +61,7 @@
         </section>
   
 
-        <h3>ÁLBUMES</h3>
+        <h3 class="titulos">ÁLBUMES</h3>
         <section>
             <article> 
                 <img src="../practica-integradora1/fotos/imgintegrador/497691461002421.jpg.webp"alt="">
@@ -72,7 +98,7 @@
         </section>
         
         <section>
-            <h3>ARTISTAS</h3>
+            <h3 class="titulos">ARTISTAS</h3>
 
             <article>
                 <img src="../practica-integradora1/fotos/milkychance.jpeg" alt="">
@@ -102,7 +128,11 @@
         </section>
 
     </section>
-
+    
+    <footer class="footer">
+        <h6 class="nombres"><strong>MOISES VICTORIA, LOPEZ SOFIA & FACAL CHIARA || PROGRAMACION I 2022</strong></h6>
+        <p class="nombres"><i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-facebook"></i></i> <i class="fa-brands fa-instagram"></i></p> 
+    </footer>
 
 </body>
 </html>
