@@ -112,7 +112,7 @@ index
     display:flex;
     flex-wrap:wrap;
     flex-direction:row;
-    justify-content:space-around ;
+    justify-content:space-around;
     border-radius:7px;
     color: #0fff20; 
     font-family: 'Montserrat', sans-serif;
@@ -123,9 +123,15 @@ index
     width:125px;
     height:125px;
     margin: 20px;
+
 }
 .caca{
     float: right;
     padding: 20px;
-    text-align: center;
+    line-height: normal;
+}
+.chici{
+    color: #0fff20; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
