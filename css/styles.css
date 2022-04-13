@@ -140,3 +140,37 @@ index
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
+
+.sectionplaylist {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row; 
+    justify-content: center;
+}
+
+.aver {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    margin:20px;
+    align-items: center;
+    width:500px;
+}
+
+.prueba {
+    color: rgb(245,11,134);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.corazon {
+    color: #0fff20;
+}
+
+.sera {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px;
+}
