@@ -108,7 +108,7 @@ index
    
 }
 .titulos{
-    color: #0fff20; 
+    color: rgb(245,11,134);
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     padding: 30px;
@@ -180,7 +180,6 @@ detalles
     color: rgb(245,11,134);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-
 }
 .fotocantantes{
     height:500px;
