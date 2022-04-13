@@ -174,3 +174,16 @@ index
     margin: 10px;
     padding: 5px;
 }
+
+detalles
+.cancionescoldplay{
+    color: rgb(245,11,134);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+
+}
+.fotocantantes{
+    height:500px;
+    margin: 20px;
+    padding: 20px;
+}
