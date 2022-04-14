@@ -12,11 +12,10 @@ body {
     padding: 5px 30px 5px 30px;
     border-radius:15px;
     color: #0fff20;;
-    box-shadow: 5px 5px 0px 0px rgb(245,11,134)
 }
 
 .headertop{
-    border: 5px solid #0fff20;
+    border: 5px solid #0fff20; 
 }
 
 .imagenlogo {
@@ -179,14 +178,31 @@ index
     padding: 5px;
 }
 
-detalles
-.cancionesco{
+/*detalles*/
+
+.cancionesco {
+    color: rgb(245,11,134);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    padding-top: 80px;
+    line-height: 60px;
+;
+
+}
+
+.fotocantantes{
+    height:500px;
+    margin: 20px;
+    padding-top: 30px;
+    vertical-align: middle;
+    float: left;
+
+}
+
+.intro{
     color: rgb(245,11,134);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
-.fotocantantes{
-    height:500px;
-    margin: 20px;
-    padding: 20px;
-}
+
