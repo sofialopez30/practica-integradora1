@@ -132,11 +132,11 @@ index
 }
 .caca{
     float: right;
-    padding: 20px;
+    padding: 25px;
     line-height: normal;
     text-decoration:none;
-    color: #0fff20; 
-    text-align: center;
+    color: #0fff20;
+    margin-top: 40px;
 }
 .chici{
     color: #0fff20; 
@@ -180,7 +180,7 @@ index
 }
 
 detalles
-.cancionescoldplay{
+.cancionesco{
     color: rgb(245,11,134);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
