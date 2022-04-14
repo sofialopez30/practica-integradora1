@@ -11,7 +11,8 @@ body {
     font-size: 70px;
     padding: 5px 30px 5px 30px;
     border-radius:15px;
-    color: #0fff20;;
+    color: #0fff20;
+    box-shadow: 5px 5px 0px 0px rgb(245,11,134);
 }
 
 .headertop{
@@ -187,7 +188,6 @@ index
     list-style-type: none;
     padding-top: 80px;
     line-height: 60px;
-;
 
 }
 
@@ -199,10 +199,23 @@ index
     float: left;
 
 }
-
+.justice{
+    font-size: 80px;
+    font-weight:bold;
+}
 .intro{
     color: rgb(245,11,134);
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
+    padding: 80px;
+}
+.dos{
+    line-height: 25px;
+    padding-top: 10px;
+    margin: 20px;
+}
+.songs{
+    text-decoration: underline;
+    font-size: 23px;
 }
 
