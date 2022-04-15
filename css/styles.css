@@ -218,4 +218,11 @@ a:link, a:visited, a:active{
     text-decoration: underline;
     font-size: 23px;
 }
-
+.generos{
+    color: #0fff20;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 60px;
+    list-style-type: none;
+    margin: 50px;
+}
