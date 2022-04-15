@@ -3,7 +3,6 @@
 }
 
 body {
-    background-color: #12325b;
     background-color: black;
 }
 .header {
@@ -99,7 +98,8 @@ a:link, a:visited, a:active{
 
 
 
-index
+/*index*/
+
 .home{
     color: #0fff20; 
     font-family: 'Montserrat', sans-serif;
