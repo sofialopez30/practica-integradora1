@@ -231,3 +231,13 @@ a:link, a:visited, a:active{
     list-style-type: none;
     margin: 50px;
 }
+@media (max-width: 420px){
+    img{
+        max-width: 250px;
+        max-height: 25px;
+    }
+    .header{
+        font-size: 40px;
+    }
+}
+
