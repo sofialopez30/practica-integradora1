@@ -158,13 +158,18 @@ a:link, a:visited, a:active{
     flex-direction: row;
     margin:20px;
     align-items: center;
-    width:500px;
+    width:600px;
 }
 
+.chicii{
+    color:#0fff20;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
 .prueba {
     color: rgb(245,11,134);
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .corazon {
