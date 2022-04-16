@@ -231,6 +231,31 @@ a:link, a:visited, a:active{
     list-style-type: none;
     margin: 50px;
 }
+
+/*detalle artista*/
+
+.artista {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    color: rgb(245,11,134);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 30px 0px 0px 30px;
+    margin-bottom: 250px;
+}
+
+.tituloartista {
+    color:#0fff20;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.populares{
+    text-decoration:underline;
+    font-weight: bold;
+}
+
 @media (max-width: 420px){
     img{
         max-width: 250px;
