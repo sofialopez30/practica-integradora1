@@ -225,14 +225,54 @@ a:link, a:visited, a:active{
     color: #0fff20;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    line-height: 60px;
     list-style-type: none;
     margin: 50px;
+    line-height: normal;
     display:flex;
     flex-wrap:wrap;
-    flex-direction: row;
+    flex-direction: column;
     margin: 10px;
     padding: 5px;
+}
+.generoshijosuno{
+    text-align: center;
+    background-color: rgb(245,11,134);
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    align-self: center;
+}
+.generoshijosdos{
+    background-color: rgb(245,11,134);
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    align-self: center;
+}
+.generoshijostres{
+    text-align: center;
+    background-color: rgb(245,11,134);
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    align-self: center;
+}
+.generoshijoscuatro{
+    text-align: center;
+    background-color: rgb(245,11,134);
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    align-self: center;
+}
+.generoshijoscinco{
+    text-align: center;
+    background-color: rgb(245,11,134);
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    align-self: center;
+
 }
 
 /*detalle artista*/
