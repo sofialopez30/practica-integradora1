@@ -273,15 +273,6 @@ a:link, a:visited, a:active{
     font-weight: bold;
 }
 
-@media (max-width: 420px){
-    img{
-        max-width: 250px;
-        max-height: 25px;
-    }
-    .header{
-        font-size: 40px;
-    }
-}
 
 /* detalle géneros*/
 
@@ -291,6 +282,24 @@ a:link, a:visited, a:active{
     font-size: 18px;
     padding: 30px;
 }
+.michael{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px;
+    color: #0fff20; 
+}
 
 
+
+@media (max-width: 420px){
+    img{
+        max-width: 250px;
+        max-height: 25px;
+    }
+    .header{
+        font-size: 40px;
+    }
+}
 
