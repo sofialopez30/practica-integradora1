@@ -295,8 +295,6 @@ a:link, a:visited, a:active{
     color: #0fff20; 
 }
 
-
-
 @media (max-width: 420px){
     img{
         max-width: 250px;
