@@ -128,10 +128,14 @@ a:link, a:visited, a:active{
 }
 
 .fotos{
-    width: 400px;
-    height: 400px;
+    width: 150px;
+    height: 150px;
     margin: 20px;
-
+}
+.fotosdos{
+        width: 4000px;
+        height: 400px;
+        margin: 20px;
 }
 .caca{
     float: right;
