@@ -297,11 +297,22 @@ a:link, a:visited, a:active{
 
 @media (max-width: 420px){
     img{
-        max-width: 250px;
-        max-height: 25px;
+        height: 100px;
+        width: 120px;
     }
-    .header{
-        font-size: 40px;
+    .header .footer .titulos .headertop{
+        font-size: 20px;
+
     }
+    .fotocantantes{ 
+        height: 100px;
+        width: 120px;
+    }
+
+@media (max-width: 600px) {
+    body {
+        background: red  ;
+    }
+}
 }
 
