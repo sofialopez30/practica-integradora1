@@ -296,7 +296,6 @@ a:link, a:visited, a:active{
         justify-content:space-around;
     }
 
-
     .imagenlogo {
         max-width:25%;
         border-radius: 50%;
@@ -371,6 +370,4 @@ a:link, a:visited, a:active{
     .sera {
         font-size:80%;
     }
-
-
 }
