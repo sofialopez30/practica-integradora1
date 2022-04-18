@@ -54,14 +54,7 @@ body {
 }
 
 
-.search {
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 5px;
-}
 
-.lupita {
-    padding: 3px 5px 3px 5px;
-}
 
 a:link, a:visited, a:active{
     text-decoration:none;
@@ -295,17 +288,28 @@ a:link, a:visited, a:active{
     color: #0fff20; 
 }
 
-
-
 @media (max-width: 420px){
     .mmm {
-        max-width: 400px;
+        width: 30%;
+        height: 20%;
+    }
+    body{
+        font-size: 2px;
     }
     .fotos{
         min-width: 80%;
     }
     .header .footer .titulos .headertop{
         font-size: 20px;
+    }
+    
+    .navegacion{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
     .fotocantantes{ 
         height: 100px;
