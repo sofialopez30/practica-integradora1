@@ -296,13 +296,6 @@ a:link, a:visited, a:active{
 }
 
 @media (max-width: 420px){
-<<<<<<< HEAD
-    .imagenlogo{border-radius:300px;
-        width: 80px;
-        height:80px;
-        text-align: center;}
-}
-=======
     .mmm {
         max-width: 400px;
     }
@@ -323,4 +316,3 @@ a:link, a:visited, a:active{
 }
 
 
->>>>>>> 95300348630b15f4a7b0cd6a15d189508740981c
