@@ -304,17 +304,11 @@ a:link, a:visited, a:active{
     }
     .header .footer .titulos .headertop{
         font-size: 20px;
-
     }
     .fotocantantes{ 
         height: 100px;
         width: 120px;
     }
+}
 
-@media (max-width: 600px) {
-    body {
-        background: red  ;
-    }
-}
-}
 
