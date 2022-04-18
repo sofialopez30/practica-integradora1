@@ -424,6 +424,7 @@ a:link, a:visited, a:active{
     .justice{
         font-size: 10vw;
         font-weight:bold;
+
     }
     .intro{
         color: rgb(245,11,134);
@@ -435,8 +436,10 @@ a:link, a:visited, a:active{
         align-items: flex-start;
     }
     .songs{
-        text-decoration: underline;
         font-size: 4vw;
     }
-
+    .jj{
+        height: 65vw;
+        width: 50vw;
+    }
 }
