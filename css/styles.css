@@ -372,5 +372,76 @@ a:link, a:visited, a:active{
         font-size:80%;
     }
 
+    /*index*/
+
+    .titulos{
+        color: rgb(245,11,134);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 7vw ;
+        padding: 7vw;
+    }
+    .titulosdos{
+        color: rgb(245,11,134);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 7vw;
+    }
+    .fotos{
+        margin: 3vw;
+    }
+    .caca{
+        float: left;
+        padding: 6vw;
+        text-decoration:none;
+        color: #0fff20;
+        margin-top: 4vw;
+    }
+    .chici{
+        color: #0fff20; 
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4vw;
+        padding: 4vw 4vw 0vw 0vw;
+    }
+
+    /*generostrack*/
+
+    .cancionesco {
+        color: rgb(245,11,134);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4vw;
+        list-style-type: none;
+        padding-top: 10vw;
+        line-height: 4vw;
+    }
+    .fotocantantes{
+        height: 70vw;
+        width: 50vw;
+        margin: 8vw;
+        padding-top: 6vw;
+        align-items: center;
+    
+    }
+    /*detalle de disco*/
+    .justice{
+        font-size: 10vw;
+        font-weight:bold;
+    }
+    .intro{
+        color: rgb(245,11,134);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vw;
+
+    }
+    .dos{
+        align-items: flex-start;
+    }
+    .songs{
+        text-decoration: underline;
+        font-size: 4vw;
+    }
+
+}
+
+
+    
 
 }
