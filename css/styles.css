@@ -359,6 +359,7 @@ a:link, a:visited, a:active{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
     }
     
     .porfavor {
@@ -366,6 +367,7 @@ a:link, a:visited, a:active{
         flex-wrap: nowrap;
         max-width: 100%;
         flex-direction:row;
+        justify-content:center;
     }
     
     .sera {
@@ -385,6 +387,7 @@ a:link, a:visited, a:active{
         font-family: 'Montserrat', sans-serif;
         font-size: 7vw;
     }
+    
     .fotos{
         margin: 3vw;
     }
@@ -445,18 +448,16 @@ a:link, a:visited, a:active{
         height:100%;
         margin:0% 0% 0% 0%;
         padding: 0%;
-    
+        align-items: center;
     }
+
     .jj{
         height: 65vw;
         width: 50vw;
         padding: 0%;
         margin: 0%;
     }
-    .sera{
-        padding: 0%;
-        margin: 0%;
-    }
+
 /*detalle de genero*/
     .titulos{
         padding: 0%;
@@ -468,3 +469,4 @@ a:link, a:visited, a:active{
         width: 50%;
         height: 50%;
     }
+}
