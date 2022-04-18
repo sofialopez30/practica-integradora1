@@ -289,32 +289,50 @@ a:link, a:visited, a:active{
 }
 
 @media (max-width: 420px){
-    .mmm {
-        width: 30%;
-        height: 20%;
+
+    .top {
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content:space-around;
     }
-    body{
-        font-size: 2px;
+
+
+    .imagenlogo {
+        max-width:25%;
+        border-radius: 50%;
     }
-    .fotos{
-        min-width: 80%;
+
+    .header {
+        font-size:350%;
+        }
+
+    .funcionaporfa {
+        margin:10% 0% 10% 0%;
     }
-    .header .footer .titulos .headertop{
-        font-size: 20px;
+
+    .navegacion {
+        font-size:100%;
+        width:100vw;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        justify-content:center;
+    }
+
+    .responsive {
+        width: 80vw;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction:column;
+        justify-content:center;
+        margin:0%;
+        padding:3%;
     }
     
-    .navegacion{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .fotocantantes {
+        width:75%;
+        height:75%;
+    }
 
-    }
-    .fotocantantes{ 
-        height: 100px;
-        width: 120px;
-    }
 }
-
-
