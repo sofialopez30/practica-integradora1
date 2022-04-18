@@ -303,7 +303,7 @@ a:link, a:visited, a:active{
 
     .header {
         font-size:350%;
-        }
+    }
 
     .funcionaporfa {
         margin:10% 0% 10% 0%;
@@ -316,7 +316,7 @@ a:link, a:visited, a:active{
         flex-wrap:wrap;
         flex-direction:column;
         justify-content:center;
-        text-align: center;
+        text-align:left;
     }
 
     .responsive {
@@ -444,8 +444,8 @@ a:link, a:visited, a:active{
     }
 
     .fotocantantess {
-        width:100%;
-        height:100%;
+        width:50vw;
+        height:65vw;
         margin:0% 0% 0% 0%;
         padding: 0%;
         align-items: center;
@@ -459,9 +459,7 @@ a:link, a:visited, a:active{
     }
 
 /*detalle de genero*/
-    .titulos{
-        padding: 0%;
-    }
+
     .textopop{
         font-size: 100%;
     }
