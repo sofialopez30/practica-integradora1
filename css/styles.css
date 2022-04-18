@@ -310,7 +310,7 @@ a:link, a:visited, a:active{
         margin:10% 0% 10% 0%;
     }
 
-    .navegacion {
+    .navegacion{
         font-size:100%;
         width:100vw;
         display:flex;
@@ -332,6 +332,22 @@ a:link, a:visited, a:active{
     .fotocantantes {
         width:100%;
         height:100%;
+        margin:0% 0% 0% 10%;
     }
 
+    .artista {
+        font-size: 100%;
+        margin:0%;
+    }
+    
+    .tituloartista {
+        font-size:150%;
+        margin:0%;
+    }
+
+    .footer {
+        width:80vw;
+        font-size:100%;
+        text-align: center;
+    }
 }
