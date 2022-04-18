@@ -331,8 +331,12 @@ a:link, a:visited, a:active{
     }
     
     .fotocantantes {
-        width:75%;
-        height:75%;
+        width:100%;
+        height:100%;
+    }
+
+    .artista {
+        
     }
 
 }
