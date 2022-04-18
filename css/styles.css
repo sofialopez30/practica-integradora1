@@ -303,7 +303,7 @@ a:link, a:visited, a:active{
 
     .header {
         font-size:350%;
-        }
+    }
 
     .funcionaporfa {
         margin:10% 0% 10% 0%;
@@ -316,7 +316,7 @@ a:link, a:visited, a:active{
         flex-wrap:wrap;
         flex-direction:column;
         justify-content:center;
-        text-align: center;
+        text-align:left;
     }
 
     .responsive {
@@ -325,8 +325,8 @@ a:link, a:visited, a:active{
         flex-wrap: wrap;
         flex-direction:column;
         justify-content:center;
-        margin:0%;
-        padding:3%;
+        margin:0vw;
+        padding:3vw;
     }
     
     .fotocantantes{
@@ -359,17 +359,19 @@ a:link, a:visited, a:active{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        justify-content: center;
     }
     
     .porfavor {
         display:flex;
         flex-wrap: nowrap;
-        max-width: 100%;
         flex-direction:row;
+        line-height: 3vw;
+        font-size: 3vw;
     }
     
     .sera {
-        font-size:80%;
+        font-size: 3vw;
     }
 
     /*index*/
@@ -385,9 +387,7 @@ a:link, a:visited, a:active{
         font-family: 'Montserrat', sans-serif;
         font-size: 7vw;
     }
-    .fotos{
-        margin: 3vw;
-    }
+
     .caca{
         float: left;
         padding: 6vw;
@@ -441,26 +441,22 @@ a:link, a:visited, a:active{
     }
 
     .fotocantantess {
-        width:100%;
-        height:100%;
-        margin:0% 0% 0% 0%;
+        width:60vw;
+        height:60vw;
+        margin:0% 0% 0% 10%;
         padding: 0%;
-    
+        align-items: center;
     }
+
     .jj{
         height: 65vw;
         width: 50vw;
         padding: 0%;
         margin: 0%;
     }
-    .sera{
-        padding: 0%;
-        margin: 0%;
-    }
+
 /*detalle de genero*/
-    .titulos{
-        padding: 0%;
-    }
+
     .textopop{
         font-size: 100%;
     }
