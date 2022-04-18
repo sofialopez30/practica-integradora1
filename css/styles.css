@@ -301,6 +301,9 @@ a:link, a:visited, a:active{
     .mmm {
         max-width: 400px;
     }
+    body{
+        font-size: 2px;
+    }
     .fotos{
         min-width: 80%;
         min-height: 60%;
