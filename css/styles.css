@@ -296,23 +296,8 @@ a:link, a:visited, a:active{
 }
 
 @media (max-width: 420px){
-    img{
-        height: 100px;
-        width: 120px;
-    }
-    .header .footer .titulos .headertop{
-        font-size: 20px;
-
-    }
-    .fotocantantes{ 
-        height: 100px;
-        width: 120px;
-    }
-
-@media (max-width: 600px) {
-    body {
-        background: red  ;
-    }
+    .imagenlogo{border-radius:300px;
+        width: 80px;
+        height:80px;
+        text-align: center;}
 }
-}
-
