@@ -350,4 +350,27 @@ a:link, a:visited, a:active{
         font-size:100%;
         text-align: center;
     }
+
+    .sectionplaylist {
+        width: 100vw;
+    }
+
+    .aver {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .porfavor {
+        display:flex;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        flex-direction:row;
+    }
+    
+    .sera {
+        font-size:80%;
+    }
+
+
 }
