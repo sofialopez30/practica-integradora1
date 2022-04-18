@@ -298,9 +298,12 @@ a:link, a:visited, a:active{
 
 
 @media (max-width: 420px){
-    img{
-        height: 100px;
-        width: 120px;
+    .mmm {
+        max-width: 400px;
+    }
+    .fotos{
+        min-width: 80%;
+        min-height: 60%;
     }
     .header .footer .titulos .headertop{
         font-size: 20px;
