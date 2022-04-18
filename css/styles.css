@@ -365,13 +365,13 @@ a:link, a:visited, a:active{
     .porfavor {
         display:flex;
         flex-wrap: nowrap;
-        max-width: 100%;
         flex-direction:row;
-        justify-content:center;
+        line-height: 3vw;
+        font-size: 3vw;
     }
     
     .sera {
-        font-size:80%;
+        font-size: 3vw;
     }
 
     /*index*/
@@ -387,10 +387,7 @@ a:link, a:visited, a:active{
         font-family: 'Montserrat', sans-serif;
         font-size: 7vw;
     }
-    
-    .fotos{
-        margin: 3vw;
-    }
+
     .caca{
         float: left;
         padding: 6vw;
