@@ -297,7 +297,7 @@ a:link, a:visited, a:active{
     }
 
     .imagenlogo {
-        max-width:25%;
+        max-width:50%;
         border-radius: 50%;
     }
 
@@ -316,7 +316,7 @@ a:link, a:visited, a:active{
         flex-wrap:wrap;
         flex-direction:column;
         justify-content:center;
-        text-align:left;
+        text-align:center;
     }
 
     .responsive {
