@@ -1,7 +1,7 @@
 let busca= location.search;
 let object= new URLSearchParams (busca);
 let xx= object.get ("id");
-let urls= "https://api.allorigins.win/raw?url= https://api.deezer.com/track/3135556" + xx
+let urls= `https://api.allorigins.win/raw?url= https://api.deezer.com/track/3135556" + xx`
 
 
 fetch (urls)
@@ -11,8 +11,26 @@ fetch (urls)
 .then (function(data){
     console.log(data);
 
-    let info = data.album
-    let ver= document.querySelector(".duele");
+
+    let fotito= document.querySelector (".holis")
+    let nombre= document.querySelector (".nom")
+    let tAlbum= document.querySelector (".tituloalmbum")
+    let image = document.querySelector('img')
+
+    image.src= data.album.picture_medium.url;
+    nombre.innerText = data.title;
+    fotito.innerText = data.artist.name
+    
+
+
+
+
+
+
+
+
+    //let info = data.data
+    /*let ver= document.querySelector(".duele");
     let etre= "";
 
     for (let i=0; i<5; i++){
@@ -23,7 +41,7 @@ fetch (urls)
         `
     }
     console.log(etre);
-    ver.innerHTML += etre
+    ver.innerHTML += etre */
     
 
 })
