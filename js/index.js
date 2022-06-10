@@ -35,6 +35,7 @@ fetch (lol)
         <img src= ${info[i].artist.picture_medium} alt = "" />
         <br>
         <a href="./detail-track.html?id=${info[i].id} "> Ir a detalle </a>
+
         </article>`
 
     }
@@ -71,7 +72,7 @@ fetch (dd)
         <p> ${info[i].title}</p>
         <img src= ${info[i].cover_medium} alt = "" />
         <br>
-        <a href="./detail-track.html?id=${info[i].id} "> Ir a detalle </a>
+        <a href="./detail-album.html?id=${info[i].id} "> Ir a detalle </a>
         </article>`
 
     }
@@ -106,7 +107,7 @@ fetch (ddd)
         <p> ${info[i].name}</p>
         <img src= ${info[i].picture_medium} alt = "" />
         <br>
-        <a href="./detail-track.html?id=${info[i].id} "> Ir a detalle </a>
+        <a href="./detail-artist.html?id=${info[i].id} "> Ir a detalle </a>
         </article>`
 
     }
