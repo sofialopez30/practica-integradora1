@@ -24,4 +24,20 @@ fetch (urlDeezer)
 let urlDeezer2 = "https://api.allorigins.win/raw?url=https://api.deezer.com/artist/" + idUrl+ "/albums"
 
 fetch (urlDeezer2)
+.then (function (data){
+    console.log (data)
+
+    let info = data.data;
+    let album = document.querySelector (".ohMyGod");
+    let discos = "";
+
+    for (let i=0; i<4; i++) {
+        discos += `<ul>
+        <li> ${info[i].title} </li>
+        </ul>`
+    }
+})
+.catch(function(error){
+    console.log("Error: " + error);
+})
 
