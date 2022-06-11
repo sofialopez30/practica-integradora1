@@ -6,42 +6,33 @@ let urls= `https://api.allorigins.win/raw?url= https://api.deezer.com/track/3135
 
 fetch (urls)
 .then (function(response){
-    return response.json ()
+    return response.json ();
 })
 .then (function(data){
     console.log(data);
 
-
-    let fotito= document.querySelector (".holis")
-    let nombre= document.querySelector (".nom")
+    //let fotito= document.querySelector (".holis")
+    /*let nombre= document.querySelector (".nom")
     let tAlbum= document.querySelector (".tituloalmbum")
     let image = document.querySelector('img')
 
-    image.src= data.album.picture_medium.url;
+    image.src= data.album.cover_medium;
     nombre.innerText = data.title;
-    fotito.innerText = data.artist.name
-    
+    fotito.innerText = data.artist.name  */
 
-
-
-
-
-
-
-
-    //let info = data.data
-    /*let ver= document.querySelector(".duele");
+    let info = data.data
+    let ver= document.querySelector(".duele");
     let etre= "";
 
-    for (let i=0; i<5; i++){
+    for (let i=0; i<1; i++){
         let lista= ""
         etre += `  <article>
-        <p> ${info[i].title}</p>
-        <img src=${info[i].cover_big} alt = ""/>
+        <p> ${info[i].tracks.title}</p>
+        <img src=${info[i].tracks.album.cover_big} alt = ""/>
         `
     }
     console.log(etre);
-    ver.innerHTML += etre */
+    ver.innerHTML += etre 
     
 
 })
