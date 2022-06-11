@@ -11,17 +11,21 @@ fetch (detailAlbum)
     let album= ''
 
     for (let i = 0; i <1; i++) {
-        album += `<article> 
+        album += `<article class= images> 
         <img src="${data.cover_medium}" alt="">
+        </article> 
+        <article class= xdlol>
         <h2>${data.title} </h2> 
         <h3> ${data.artist.name} </h3>
         <p> Duration: ${data.duration} </p>
         <p> Release date: ${data.release_date}</p>
-        <br>
-        <a href="detail-artist.html"> Ver artista</a>
         
         </article> 
-        <article> 
+
+        <article class=art> 
+        <br>
+        <a href="detail-artist.html"> Ver artista</a>
+        <br>
         <a href="playlist.html" type="submit">Agregar a Playlist <i class="fa-solid fa-heart-circle-plus"></i>
         <p> ${data.tracklist} </p>
         </article> 

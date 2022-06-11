@@ -1,7 +1,25 @@
 * {
     box-sizing:border-box;
 }
+/* css de js*/
+.xdlol{
+    color: #00fdff;
+    font-size: 18px;
+    text-align: center;
+}
+.art{
+    line-height: 30px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 
+}
+
+
+
+/*fin de css de js*/
 body {
     background-color: black;
 }
