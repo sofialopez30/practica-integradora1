@@ -22,9 +22,9 @@ fetch (detailAlbum)
     mando.src=data.cover_medium;
     name.innerHTML = data.artist.name
     veremos.innerHTML= data.title
+    color.innerText = "Duracion:"
     color.innerHTML= data.duration
     bonito.innerHTML= data.release_date 
-    name.style.color= " #00fdff";
 
 
 
@@ -63,6 +63,34 @@ fetch (detailAlbum2)
 
     zz.innerHTML += vamo;
 
+    let neverita = [];
+    let recupero = localStorage.getItem ("neverita")
+    let alf = document.querySelector (".neverita")
+
+    if(recupero){
+        neverita= JSON.parse(recupero)
+        neveritados= neverita
+    }
+
+    if(neverita.includes(idUrl)){
+        alf.innerText = "Remover de playlist"
+    }
+    alf.addEventListener ("click", function(evento){
+        evento.preventDefault()
+
+        if(neverita.includes(idUrl)){
+            let sacar = neverita.indexOf(idUrl)
+            neverita.splice (sacar,1)
+            alf.innerText = 'agregar a favoritos'
+        } else {
+            neverita.push (idUrl)
+            alf.innerText = 'Sacar de favoritos'
+        }
+        let gifToStrings = JSON.stringify(neverita)
+        localStorage.setItem("neverita", gifToStrings)
+
+        console.log(localStorage.getItem("neverita"));
+    })
 
 
     let favoritos = [];
