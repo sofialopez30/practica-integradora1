@@ -14,11 +14,18 @@ fetch (detailAlbum)
 
     let mando= document.querySelector (".efecto");
     let name = document.querySelector (".a");
+    let veremos= document.querySelector (".b")
+    let color = document.querySelector (".color")
+    let bonito = document.querySelector (".bonito")
     inf= ""
 
     mando.src=data.cover_medium;
     name.innerHTML = data.artist.name
+    veremos.innerHTML= data.title
+    color.innerHTML= data.duration
+    bonito.innerHTML= data.release_date 
     name.style.color= " #00fdff";
+
 
 
 })
@@ -35,34 +42,63 @@ fetch (detailAlbum2)
 .then (function(data){
     console.log(data);
     
-    let zz= document.querySelector (".bonito")
+    let info= data.data
+    let zz= document.querySelector (".neverita")
     let vamo= ""
 
     for (let i = 0; i <1; i++) {
-        vamo += `<article class= images> 
-        <img src="${data.cover_medium}" alt="">
-        </article> 
-        <article class= xdlol>
-        <h2 class=arte >${data.title} </h2> 
-        <h3> ${data.name} </h3>
-        <p> Duration: ${data.duration} </p>
-        <p> Release date: ${data.release_date}</p>
-        
-        </article> 
+        vamo += `
     
         <article class=art> 
         <br>
         <a href="detail-artist.html"> Ver artista</a>
         <br>
         <a href="playlist.html" type="submit">Agregar a Playlist <i class="fa-solid fa-heart-circle-plus"></i>
-        <p> ${data.tracklist} </p>
         </article> 
         `
 
     }
 
     console.log(vamo);
+
     zz.innerHTML += vamo;
+
+
+
+    let favoritos = [];
+    let recuperoStorage= localStorage.getItem("favoritos")
+
+    if(recuperoStorage){
+        favoritos= JSON.parse(recuperoStorage)
+        favoritosdos= favoritos
+    }
+
+
+    let as = document.querySelector (".tarot")
+
+    if(favoritos.includes (idUrl)){
+        as.innerText = "Sacar de Favoritos"
+    }
+
+    as.addEventListener ("click", function(evento){
+        evento.preventDefault()
+
+        if(favoritos.includes (idUrl)){
+            let sacar = favoritos.indexOf(idUrl)
+            favoritos.splice (sacar, 1)
+            as.innerText = "agregar a favoritos"
+
+        }else{
+            favoritos.push (idUrl)
+            as.innerText = "Sacar de Favoritos"
+        }
+
+        //agergar arrat a local Stograge y pasar a string//
+        let gifToString = JSON.stringify(favoritos)
+        localStorage.setItem("favoritos", gifToString)
+
+        console.log(localStorage.getItem("favoritos"));
+    })
 
     
 })

@@ -38,6 +38,16 @@
     justify-content: center;
     margin-top: 10px;
 
+
+}
+.tarot{
+    font-size: 16px;
+}
+.detalle{
+    font-size: 20px;
+    color:#00fdff ;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
 }
 
 
