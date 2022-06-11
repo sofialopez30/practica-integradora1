@@ -81,10 +81,10 @@ fetch (detailAlbum2)
         if(neverita.includes(idUrl)){
             let sacar = neverita.indexOf(idUrl)
             neverita.splice (sacar,1)
-            alf.innerText = 'agregar a favoritos'
+            alf.innerText = 'agregar a playlist'
         } else {
             neverita.push (idUrl)
-            alf.innerText = 'Sacar de favoritos'
+            alf.innerText = 'Remover de playlist'
         }
         let gifToStrings = JSON.stringify(neverita)
         localStorage.setItem("neverita", gifToStrings)
