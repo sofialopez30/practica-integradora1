@@ -36,7 +36,7 @@ fetch (urlDeezer2)
     let discos = "";
 
     for (let i=0; i<5; i++) {
-        discos += `<li> ${info[i].title} </li>`
+        discos += `<li> <a href="detail-album.html?id=${info[i].id}"> ${info[i].title} </a> </li>`
     }
 
     console.log (discos);
