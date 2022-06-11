@@ -15,7 +15,7 @@ fetch (detailAlbum)
         <img src="${data.cover_medium}" alt="">
         </article> 
         <article class= xdlol>
-        <h2>${data.title} </h2> 
+        <h2 class=arte >${data.title} </h2> 
         <h3> ${data.artist.name} </h3>
         <p> Duration: ${data.duration} </p>
         <p> Release date: ${data.release_date}</p>

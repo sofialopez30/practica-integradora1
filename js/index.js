@@ -29,10 +29,10 @@ fetch (lol)
     for(let i=0; i<5; i++){
         let lista= ""
         characters += `
-        <article>
-        <p> ${info[i].artist.name}</p>
-        <p> ${info[i].album.title}</p>
-        <img src= ${info[i].artist.picture_medium} alt = "" />
+        <article >
+        <p class = moscow > ${info[i].album.title}</p>
+        <p class= mule>${info[i].artist.name} </p>
+        <img class= titi src= ${info[i].artist.picture_medium} alt = "" />
         <br>
         <a href="./detail-track.html?id=${info[i].id} "> Ir a detalle </a>
 

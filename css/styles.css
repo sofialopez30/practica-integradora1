@@ -2,13 +2,36 @@
     box-sizing:border-box;
 }
 /* css de js*/
+/* css de index*/
+
+.mule{
+    font-size: 15px;
+}
+.titi{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: center;
+    margin: 20px;
+}
+
+/*css de detalle album*/
 .xdlol{
     color: #00fdff;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
+    font-family:'Montserrat', sans-serif;
 }
+.arte{
+    font-size: 30px;
+}
+
 .art{
     line-height: 30px;
+    font-size: 16px;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+
 }
 .images{
     display: flex;
