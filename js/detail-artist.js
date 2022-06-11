@@ -16,6 +16,7 @@ fetch (urlDeezer)
 
     picture.src = data.picture;
     name.innerHTML = data.name;
+    name.style.color = "#0fff20";
 })
 .catch (function(error) {
     console.log ("Error: " + error);
@@ -24,6 +25,9 @@ fetch (urlDeezer)
 let urlDeezer2 = "https://api.allorigins.win/raw?url=https://api.deezer.com/artist/" + idUrl+ "/albums"
 
 fetch (urlDeezer2)
+.then (function(response){
+    return response.json ()
+})
 .then (function (data){
     console.log (data)
 
@@ -31,13 +35,16 @@ fetch (urlDeezer2)
     let album = document.querySelector (".ohMyGod");
     let discos = "";
 
-    for (let i=0; i<4; i++) {
-        discos += `<ul>
-        <li> ${info[i].title} </li>
-        </ul>`
+    for (let i=0; i<5; i++) {
+        discos += `<li> ${info[i].title} </li>`
     }
+
+    console.log (discos);
+
+    album.innerHTML = discos;
+    album.style.color =  "#0fff20";
 })
-.catch(function(error){
-    console.log("Error: " + error);
+.catch (function(error){
+    console.log (error);
 })
 
