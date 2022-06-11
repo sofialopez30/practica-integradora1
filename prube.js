@@ -34,5 +34,3 @@ fetch (detailAlbum)
 .catch(function (error) {
     console.log(error);
 })
-
-
