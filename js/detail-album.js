@@ -1,7 +1,7 @@
 let queryString = location.search;
 let queryStringObt= new URLSearchParams (queryString);
 let idUrl = queryStringObt.get ("id");
-let detailAlbum = 'https://api.allorigins.win/raw?url=https://api.deezer.com/album/' + idUrl 
+let detailAlbum = `https://api.allorigins.win/raw?url=https://api.deezer.com/album/${idUrl}?`;
 
 fetch (detailAlbum)
 
@@ -17,7 +17,16 @@ fetch (detailAlbum)
     let veremos= document.querySelector (".b")
     let color = document.querySelector (".color")
     let bonito = document.querySelector (".bonito")
-    //let lista= document.querySelector (".lista")
+    let lista= document.querySelector (".lista")
+
+    /*let lista2 = [];
+    lista = lista2
+    let recuperos = localStorage.getItem ("lista2")
+
+    if(recuperos){
+        lista= JSON.stringify(recuperos)
+    } */
+
     inf= ""
 
     mando.src=data.cover_medium;
@@ -25,7 +34,8 @@ fetch (detailAlbum)
     veremos.innerHTML= data.title
     color.innerHTML= "Duracion:" + " " + data.duration
     bonito.innerHTML= "Release date:"+ " "+ data.release_date 
-    //lista.innerHTML= data.tracklist
+    //lista2.innerHTML= data.tracklist
+
 
 
 
@@ -43,13 +53,15 @@ fetch (detailAlbum2)
 .then (function(data){
     console.log(data);
     
-    let info= data.data
-    let zz= document.querySelector (".neverita")
-    let vamo= ""
+    let info= data.data;
+    let zz= document.querySelector (".neverita");
+    let vamo= "";
 
     for (let i = 0; i <1; i++) {
         vamo += `
-    
+
+        <p> ${info[i].artist.tracklist} </p>
+        <br> 
         <article class=art> 
         <a href="playlist.html" type="submit">Agregar a Playlist <i class="fa-solid fa-heart-circle-plus"></i>
         </article> 
@@ -58,7 +70,6 @@ fetch (detailAlbum2)
     }
 
     console.log(vamo);
-
     zz.innerHTML += vamo;
 
     let neverita = [];
