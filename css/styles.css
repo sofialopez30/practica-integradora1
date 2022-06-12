@@ -49,6 +49,7 @@
 /*fin de css de js*/
 body {
     background-color: black;
+    background: linear-gradient(to bottom, #071E22, #2200ff5a);
 }
 .header {
     font-family: 'Montserrat', sans-serif;
@@ -91,7 +92,8 @@ body {
     justify-content:space-around;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    background-color: rgb(15, 14, 15);
+    background-color:   #241e49a8 ;
+
 }
 
 
@@ -125,7 +127,8 @@ a:link, a:visited, a:active{
 
 
 ::-webkit-scrollbar{
-    width: 9px;   
+    width: 9px; 
+    background-color: #000000;  
 }
 
 ::-webkit-scrollbar-thumb{

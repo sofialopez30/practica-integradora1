@@ -64,6 +64,7 @@ fetch (detailAlbum2)
         <br> 
         <article class=art> 
         <a href="playlist.html" type="submit">Agregar a Playlist <i class="fa-solid fa-heart-circle-plus"></i>
+        <br>
         </article> 
         `
 
