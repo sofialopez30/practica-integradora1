@@ -22,9 +22,7 @@
     text-align: center;
     font-family:'Montserrat', sans-serif;
 }
-.arte{
-    font-size: 30px;
-}
+
 
 .art{
     line-height: 30px;
@@ -33,21 +31,17 @@
     text-align: center;
 
 }
-.images{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
 
 
-}
-.tarot{
-    font-size: 16px;
-}
 .detalle{
     font-size: 20px;
     color:#00fdff ;
     font-family:'Montserrat', sans-serif;
     text-align: center;
+}
+.verano{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 

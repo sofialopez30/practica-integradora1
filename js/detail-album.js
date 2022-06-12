@@ -17,14 +17,15 @@ fetch (detailAlbum)
     let veremos= document.querySelector (".b")
     let color = document.querySelector (".color")
     let bonito = document.querySelector (".bonito")
+    //let lista= document.querySelector (".lista")
     inf= ""
 
     mando.src=data.cover_medium;
     name.innerHTML = data.artist.name
     veremos.innerHTML= data.title
-    color.innerText = "Duracion:"
-    color.innerHTML= data.duration
-    bonito.innerHTML= data.release_date 
+    color.innerHTML= "Duracion:" + " " + data.duration
+    bonito.innerHTML= "Release date:"+ " "+ data.release_date 
+    //lista.innerHTML= data.tracklist
 
 
 
@@ -50,9 +51,6 @@ fetch (detailAlbum2)
         vamo += `
     
         <article class=art> 
-        <br>
-        <a href="detail-artist.html"> Ver artista</a>
-        <br>
         <a href="playlist.html" type="submit">Agregar a Playlist <i class="fa-solid fa-heart-circle-plus"></i>
         </article> 
         `
