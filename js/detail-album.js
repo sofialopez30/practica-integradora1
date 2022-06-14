@@ -14,27 +14,41 @@ fetch (detailAlbum)
 
     let mando= document.querySelector (".efecto");
     let name = document.querySelector (".a");
-    let veremos= document.querySelector (".b")
-    let color = document.querySelector (".color")
-    let bonito = document.querySelector (".bonito")
-    let lista= document.querySelector (".lista")
+    let veremos= document.querySelector (".b");
+    let color = document.querySelector (".color");
+    let bonito = document.querySelector (".bonito");
+    let lista= document.querySelector (".lista");
+    let rato = document.querySelector (".rato");
+    let zz= document.querySelector (".neverita");
 
-    /*let lista2 = [];
+    let vamo= "";
+     /*let lista2 = [];
     lista = lista2
     let recuperos = localStorage.getItem ("lista2")
 
     if(recuperos){
         lista= JSON.stringify(recuperos)
     } */
+        //lista2.innerHTML= data.tracklist
 
-    inf= ""
 
     mando.src=data.cover_medium;
     name.innerHTML = data.artist.name
     veremos.innerHTML= data.title
     color.innerHTML= "Duracion:" + " " + data.duration
     bonito.innerHTML= "Release date:"+ " "+ data.release_date 
-    //lista2.innerHTML= data.tracklist
+    rato.innerHTML= "Genero:"+ " "+ data.genres.data [0].name
+    
+    let tracks= document.querySelector (".neverita");
+    let busco= localStorage.getItem ("tracks")
+    tracks= JSON.stringify (busco);
+
+    tracks.innerHTML= data.tracks.data 
+    for (let i = 0; i <tracks.lenth; i++) {
+        console.log(tracks[i]);
+
+    }
+    
 
 
 
@@ -44,7 +58,9 @@ fetch (detailAlbum)
     console.log(error);
 })
 
-let detailAlbum2 = "https://api.allorigins.win/raw?url=https://api.deezer.com/album/" + idUrl + "/tracks"
+/*<a href="playlist.html" type="submit">Agregar a Playlist <i class="fa-solid fa-heart-circle-plus"></i>
+
+/* let detailAlbum2 = "https://api.allorigins.win/raw?url=https://api.deezer.com/album/" + idUrl + "/tracks"
 
 fetch (detailAlbum2)
 .then (function(response){
@@ -52,15 +68,14 @@ fetch (detailAlbum2)
 })
 .then (function(data){
     console.log(data);
-    
+
+
     let info= data.data;
     let zz= document.querySelector (".neverita");
     let vamo= "";
 
     for (let i = 0; i <1; i++) {
         vamo += `
-
-        <p> ${info[i].artist.tracklist} </p>
         <br> 
         <article class=art> 
         <a href="playlist.html" type="submit">Agregar a Playlist <i class="fa-solid fa-heart-circle-plus"></i>
@@ -138,76 +153,40 @@ fetch (detailAlbum2)
         console.log(localStorage.getItem("favoritos"));
     })
 
+    /*let infos=data.genres.data;
+    let po= document.querySelector (".porto");
+    let probandoGenres="";
+
+    for(let i=0; i<info.length; i++){
+        //construir un elemento de lista
+        probandoGenres += `<p> ${infos[i].name}</p>`
+    }
+    console.log(probandoGenres);
+    
+    po.innerHTML += probandoGenres;
+
+
+    let infoCanciones = data.tracks.data;
+
+    //capturar el contenedor de lista
+    let cancioneslist = document.querySelector(".cancioneslist");
+    let contenidoCanciones = "";
+
+    //Los elementos están en un array y para obtenerlos hay recorrerlo.
+    for(let i=0; i<infoCanciones.length; i++){
+        //construir un elemento de lista
+        contenidoCanciones += `${infoCanciones[i].title}`
+    }
+    console.log(contenidoCanciones);
+
+    cancioneslist.innerHTML += contenidoCanciones; 
+
     
 })
 .catch(function (error) {
     console.log(error);
-})
+}) */
 
 
-/*let detailAlbum2 = "https://api.allorigins.win/raw?url=https://api.deezer.com/album/" + idUrl + "/tracks"
-
-fetch(detailAlbum2)
-.then (function(response){
-    return response.json ();
-})
-.then (function(data){
-    console.log(data);
-
-    let info =data.data;
-    let album= document.querySelector(".bonito");
-    let mostrar = "";
-
-
-
-    for (let i = 0; i <5; i++) {
-        album += `
-        <article class= images> 
-        <img src="${info[i].cover_medium}" alt="">
-        </article> 
-        <article class= xdlol>
-        <h2 class=arte >${info[i].title} </h2> 
-        <h3> ${info[i].artist.name} </h3>
-        <p> Duration: ${info[i].duration} </p>
-        <p> Release date: ${info[i].release_date}</p>
-        
-        </article> 
-        <li> <a href = "detail-artist.html?id=${info[i].id}"> ${info[i].title}</a></li>`
-        
-        
-        
-        /*`<article class= images> 
-        <img src="${info[i].cover_medium}" alt="">
-        </article> 
-        <article class= xdlol>
-        <h2 class=arte >${info[i].title} </h2> 
-        <h3> ${info[i].artist.name} </h3>
-        <p> Duration: ${info[i].duration} </p>
-        <p> Release date: ${info[i].release_date}</p>
-        
-        </article> 
-
-        <article class=art> 
-        <br>
-        <a href="detail-artist.html"> Ver artista</a>
-        <br>
-        <a href="playlist.html" type="submit">Agregar a Playlist <i class="fa-solid fa-heart-circle-plus"></i>
-        <p> ${data.tracklist} </p>
-        </article> 
-        `*/
-       /* 
-    }
-
-    console.log(mostrar);
-    album.innerHTML = mostrar;
-
-
-
-
-
-})
-.catch(function (error) {
-    console.log(error);
-})  */
 
 
