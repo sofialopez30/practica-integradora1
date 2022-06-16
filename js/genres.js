@@ -15,9 +15,9 @@ fetch(urlapi)
 
 
     for (let i=0; i<info.length; i++){
-        elementosLista += `<article class="genres">
+        elementosLista += `<article class="generoshijos">
         <p><a href="detail-genres.html?id=${info[i].id}">${info[i].name}</a></p>
-        <img class="fotosgeneros" src= "${info[i].picture}" alt="">
+       
         </article>`
     }
     console.log(elementosLista);
