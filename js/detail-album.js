@@ -22,22 +22,13 @@ fetch (detailAlbum)
     let zz= document.querySelector (".neverita");
 
     let vamo= "";
-     /*let lista2 = [];
-    lista = lista2
-    let recuperos = localStorage.getItem ("lista2")
-
-    if(recuperos){
-        lista= JSON.stringify(recuperos)
-    } */
-        //lista2.innerHTML= data.tracklist
-
 
     mando.src=data.cover_medium;
-    name.innerHTML = data.artist.name
-    veremos.innerHTML= data.title
-    color.innerHTML= "Duracion:" + " " + data.duration
-    bonito.innerHTML= "Release date:"+ " "+ data.release_date 
-    rato.innerHTML= "Genero:"+ " "+ data.genres.data [0].name
+    name.innerHTML += `<a href="detail-artist.html?id=${data.artist.id}">${data.artist.name}</a>`;
+    veremos.innerHTML= data.title;
+    color.innerHTML= "Duration:" + " " + data.duration;
+    bonito.innerHTML= "Release date:"+ " "+ data.release_date ;
+    rato.innerHTML += `<a href= "genres.html?id=${data.genres.id}"> ${data.genres.data [0].name} </a>`;
     
 
     
@@ -50,9 +41,9 @@ fetch (detailAlbum)
 
     for (let i = 0; i <inf.length; i++) {
         info += `
-        <a href = "playlist.html?q=${inf[i].id}"> 
+        <a href = "detail-track.html?q=${inf[i].id}"> 
         <h4> ${inf[i].title} 
-        <i class="fa-solid fa-heart-circle-plus"<a href="playlist.html" type="submit"> </a></i></h4> 
+        <i class="fa-solid fa-heart-circle-plus"<a href="detail-track.html" type="submit"> </a></i></h4> 
         `
         
 
@@ -60,7 +51,7 @@ fetch (detailAlbum)
     console.log(info);
     tracks.innerHTML += info
 
-    let neverita = [];
+   /* let neverita = [];
     let recupero = localStorage.getItem ("neverita")
     let alf = document.querySelector (".neverita")
 
@@ -87,7 +78,9 @@ fetch (detailAlbum)
         localStorage.setItem("neverita", gifToStrings)
 
         console.log(localStorage.getItem("neverita"));
-    })
+
+        
+    })*/
 
     
 
@@ -225,7 +218,3 @@ fetch (detailAlbum2)
 .catch(function (error) {
     console.log(error);
 }) */
-
-
-
-
