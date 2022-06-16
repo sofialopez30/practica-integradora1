@@ -39,17 +39,25 @@ fetch (detailAlbum)
     bonito.innerHTML= "Release date:"+ " "+ data.release_date 
     rato.innerHTML= "Genero:"+ " "+ data.genres.data [0].name
     
-    let tracks= document.querySelector (".neverita");
-    let busco= localStorage.getItem ("tracks")
-    tracks= JSON.stringify (busco);
 
-    tracks.innerHTML= data.tracks.data 
-    for (let i = 0; i <tracks.lenth; i++) {
-        console.log(tracks[i]);
+    
+    //let busco= localStorage.getItem ("tracks")
+    //tracks= JSON.stringify (busco);
+
+    let inf= data.tracks.data
+    let tracks= document.querySelector (".funcioname");
+    let info= "";
+
+    for (let i = 0; i <inf.length; i++) {
+        info += `<li>
+        <a href = "detail-track.html?q=${inf[i].id}"> 
+        <h4>${inf[i].title} <i class="fa-solid fa-heart-circle-plus"<a href="playlist.html" type="submit"> </a></i></h4> 
+        </li>`
+        
 
     }
-    
-
+    console.log(info);
+    tracks.innerHTML += info
 
 
 
@@ -85,7 +93,7 @@ fetch (detailAlbum2)
 
     }
 
-    console.log(vamo);
+  </a>  console.log(vamo);
     zz.innerHTML += vamo;
 
     let neverita = [];
