@@ -49,15 +49,45 @@ fetch (detailAlbum)
     let info= "";
 
     for (let i = 0; i <inf.length; i++) {
-        info += `<li>
-        <a href = "detail-track.html?q=${inf[i].id}"> 
-        <h4>${inf[i].title} <i class="fa-solid fa-heart-circle-plus"<a href="playlist.html" type="submit"> </a></i></h4> 
-        </li>`
+        info += `
+        <a href = "playlist.html?q=${inf[i].id}"> 
+        <h4> ${inf[i].title} 
+        <i class="fa-solid fa-heart-circle-plus"<a href="playlist.html" type="submit"> </a></i></h4> 
+        `
         
 
     }
     console.log(info);
     tracks.innerHTML += info
+
+    let neverita = [];
+    let recupero = localStorage.getItem ("neverita")
+    let alf = document.querySelector (".neverita")
+
+    if(recupero){
+        neverita= JSON.parse(recupero)
+        neveritados= neverita
+    }
+
+    if(neverita.includes(idUrl)){
+        alf.innerText = "Remover de playlist"
+    }
+    alf.addEventListener ("click", function(evento){
+        evento.preventDefault()
+
+        if(neverita.includes(idUrl)){
+            let sacar = neverita.indexOf(idUrl)
+            neverita.splice (sacar,1)
+            alf.innerText = 'agregar a playlist'
+        } else {
+            neverita.push (idUrl)
+            alf.innerText = 'Remover de playlist'
+        }
+        let gifToStrings = JSON.stringify(neverita)
+        localStorage.setItem("neverita", gifToStrings)
+
+        console.log(localStorage.getItem("neverita"));
+    })
 
     
 
