@@ -60,4 +60,3 @@ fetch (urlDeezer2)
 .catch (function(error){
     console.log (error);
 })
-
