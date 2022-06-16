@@ -5,7 +5,7 @@ let idUrl = queryStringObt.get ("id");
 let urlDeezer = "https://api.allorigins.win/raw?url=https://api.deezer.com/artist/" + idUrl
 
 fetch (urlDeezer)
-.then (function (response) {
+.then (function (response){
     return response.json ()
 })
 .then (function(data) {
