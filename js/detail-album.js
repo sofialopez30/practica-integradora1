@@ -41,50 +41,50 @@ fetch (detailAlbum)
 
     for (let i = 0; i <inf.length; i++) {
         info += `
-        <a href = "detail-track.html?q=${inf[i].id}"> 
-        <h4> ${inf[i].title} 
-        <i class="fa-solid fa-heart-circle-plus"<a href="detail-track.html" type="submit"> </a></i></h4> 
-        `
+        <a href = "detail-track.html?q=${inf[i].id}">
+        <h4> ${inf[i].title}</h4> 
         
-
+        `
     }
     console.log(info);
     tracks.innerHTML += info
 
-   /* let neverita = [];
-    let recupero = localStorage.getItem ("neverita")
-    let alf = document.querySelector (".neverita")
 
-    if(recupero){
-        neverita= JSON.parse(recupero)
-        neveritados= neverita
-    }
 
-    if(neverita.includes(idUrl)){
-        alf.innerText = "Remover de playlist"
-    }
-    alf.addEventListener ("click", function(evento){
-        evento.preventDefault()
-
-        if(neverita.includes(idUrl)){
-            let sacar = neverita.indexOf(idUrl)
-            neverita.splice (sacar,1)
-            alf.innerText = 'agregar a playlist'
-        } else {
-            neverita.push (idUrl)
-            alf.innerText = 'Remover de playlist'
-        }
-        let gifToStrings = JSON.stringify(neverita)
-        localStorage.setItem("neverita", gifToStrings)
-
-        console.log(localStorage.getItem("neverita"));
-
+    for (let i=0; i <inf.length; i ++){
+        let favoritos = [];
+        let recuperoStorage= localStorage.getItem("favoritos");
         
-    })*/
+        if(recuperoStorage){
+            favoritos= JSON.parse(recuperoStorage);
+            favoritosdos= favoritos;
+        }
+        let as = document.querySelector (".tarot");
+        if(favoritos.includes (idUrl)){
+            as.innerText = "Sacar de Favoritos"
+        }
+        as.addEventListener ("click", function(evento){
+            evento.preventDefault()
+            if(favoritos.includes (idUrl)){
+                let sacar = favoritos.indexOf(idUrl);
+                favoritos.splice (sacar, 1);
+                as.innerText = "agregar a favoritos"
+            }else{
+            favoritos.push (idUrl)
+            as.innerText = "Sacar de Favoritos"
+        }
+
+        //agergar arrat a local Stograge y pasar a string//
+        let gifToString = JSON.stringify(favoritos)
+        localStorage.setItem("favoritos", gifToString)
+
+        console.log(localStorage.getItem("favoritos"));
+    })
+
+
+    }
 
     
-
-
 })
 .catch(function (error) {
     console.log(error);
