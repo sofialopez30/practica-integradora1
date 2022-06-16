@@ -1,3 +1,4 @@
+
 let queryString = location.search;
 let queryStringObt= new URLSearchParams (queryString);
 let idUrl = queryStringObt.get ("id");
