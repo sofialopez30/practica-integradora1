@@ -19,13 +19,13 @@ fetch (detailAlbum)
     let bonito = document.querySelector (".bonito")
     let lista= document.querySelector (".lista")
 
-    /*let lista2 = [];
-    lista = lista2
+    let lista2 = [];
+    lista = lista2;
     let recuperos = localStorage.getItem ("lista2")
 
-    if(recuperos){
-        lista= JSON.stringify(recuperos)
-    } */
+    
+    lista= JSON.stringify();
+    
 
     inf= ""
 
@@ -34,9 +34,9 @@ fetch (detailAlbum)
     veremos.innerHTML= data.title
     color.innerHTML= "Duracion:" + " " + data.duration
     bonito.innerHTML= "Release date:"+ " "+ data.release_date 
-    //lista2.innerHTML= data.tracklist
+    lista2.innerHTML= data.artist.tracklist
 
-
+    
 
 
 })
