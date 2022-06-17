@@ -1,16 +1,3 @@
-let hola= document.querySelector("form")
-let messi= document.querySelector(".input")
-
-hola.addEventListener('submit', function (event) {
-    event.preventDefault()
-    if(messi.value.length >= 3 ){
-        this.submit()
-    }else{
-        alert ('Poner al menos tres caracteres')
-    }
-    
-})
-
 let queryString = location.search;
 let queryStringObt= new URLSearchParams (queryString);
 let idUrl = queryStringObt.get ("id");
@@ -18,7 +5,7 @@ let idUrl = queryStringObt.get ("id");
 let urlDeezer = "https://api.allorigins.win/raw?url=https://api.deezer.com/artist/" + idUrl
 
 fetch (urlDeezer)
-.then (function (response){
+.then (function (response) {
     return response.json ()
 })
 .then (function(data) {

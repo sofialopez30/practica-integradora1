@@ -30,7 +30,8 @@ fetch (urlDeezer)
     </article> */
 
 
-    name.innerHTML += `<a class "href" href= "./detail-album.html?id=${data.album.id}"> ${data.title}</a>`
+    name.innerHTML += ` <p><a href="./detail-album.html?q=${data.album.id}">Album: ${data.album.title}</a>`
+   // </p><a class "href" href= "./detail-album.html?q=${data.id}""> ${data.title}</a>
     nomart.innerHTML = data.artist.name
     nombredisco.innerHTML = data.album.title
 
