@@ -12,25 +12,70 @@ fetch (urlDeezer)
     
     let picture= document.querySelector (".fotito");
     let name = document.querySelector (".nom");
+    let nomart = document.querySelector (".nomart");
+    let nombredisco = document.querySelector (".nombredisco");
     
 
-    picture.src = tracks.album.cover;
-    name.innerHTML = tracks.artist.name;
+    picture.src= data.album.cover_big
+    
+   /* <a href="" class="nombretema"><br> ${tracks.title} </a>
+    <a href="./detail-artist.html" class="nombretema"><br> ${tracks.artist.name} </a>
+    <a href="./detail-album.html" class="albumde">  </a>
+    <a href="./detail-album.html" class="albumde"><br> ${tracks.album.title} </a>
+    <br>
+    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${idCancion}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+    <br>
+    <br>
+    
+    </article> */
 
 
+    name.innerHTML += `<a class "href" href= "./detail-album.html?id=${data.album.id}"> ${data.title}</a>`
+    nomart.innerHTML = data.artist.name
+    nombredisco.innerHTML = data.album.title
 
-    /*let info = data.data;
-    let album = document.querySelector (".ohMyGod");
-    let discos = "";
+    let xd= document.querySelector("#xd")
 
-    for (let i=0; i<5; i++) {
-        discos += `<li> <a href="detail-album.html?id=${info[i].id}"> ${info[i].title} </a> </li>`
+    let neverita = [];
+    let recupero = localStorage.getItem ("neverita")
+    let alf = document.querySelector (".neverita")
+
+    if (recupero === "" || recupero === null) {
+        recupero = "[]"
     }
+    console.log(recupero);
 
-    console.log (discos);
+    if(recupero){
+        neveritados= JSON.parse(recupero)
+        neveritados = neverita
+    }
+    
+    if(neverita.includes(idUrl)){
+        alf.innerText = "Remover de playlist"
+    }
+    xd.addEventListener ("click", function(evento){
+        evento.preventDefault()
+    
+        if(neverita.includes(idUrl)){
+            let sacar = neverita.indexOf(idUrl)
+            neverita.splice (sacar,1)
+            xd.innerText = 'agregar a playlist'
+        } else {
+            neverita.push (idUrl)
+            xd.innerText = 'Remover de playlist'
+        }
+        let gifToStrings = JSON.stringify(neverita)
+        localStorage.setItem("neverita", gifToStrings)
+    
+        console.log(localStorage.getItem("neverita"));
+    
+        
+    })
 
-    album.innerHTML = discos;
-    album.style.color =  "#0fff20"; */
+
+
+
+
 })
 .catch (function(error) {
     console.log ("Error: " + error);
