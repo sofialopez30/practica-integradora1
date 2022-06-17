@@ -1,9 +1,9 @@
-let querystring =location.storage;
+let querystring =location.search;
 let querystringObt = new URLSearchParams(querystring);
-let idUurl =querystringObt.get("id");
-let urlapi = "https://api.allorigins.win/raw?url=https://api.deezer.com/genre" 
+let idUrl =querystringObt.get("id");
+let urlApi = "https://api.allorigins.win/raw?url=https://api.deezer.com/genre/" + idUrl
 
-fetch(urlapi)
+fetch(urlApi)
 .then(function(response){
     return response.json();
 })
@@ -14,10 +14,10 @@ fetch(urlapi)
     let elementosListados = ''
 
 
-    for (let i=0; i<info.length; i++){
-        elementosListados += `<article class="detallegeneros">
-        <p>${info[i].name}</a>
-        <img class="fotosgeneros" src="${info[i].picture_medium}" alt="">
+    for (let i=0; i<1; i++){
+        elementosListados += `<article class=detalleGeneros>
+        <p>Genero: ${data.name}</p>
+        <img class="fotosgeneros" src="${data.picture_medium}" alt="">
         </article>`
     }
     console.log(elementosListados);

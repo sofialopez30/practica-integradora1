@@ -17,7 +17,6 @@ fetch(urlapi)
     for (let i=0; i<info.length; i++){
         elementosLista += `<article class="generoshijos">
         <p><a href="detail-genres.html?id=${info[i].id}">${info[i].name}</a></p>
-       
         </article>`
     }
     console.log(elementosLista);
