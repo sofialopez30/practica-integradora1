@@ -60,49 +60,59 @@ fetch (detailAlbum)
     let info= "";
 
     for (let i = 0; i <inf.length; i++) {
-        info += `
-        <a href = "detail-track.html?q=${inf[i].id}">
-        <h4> ${inf[i].title}</h4> 
-        
-        `
+        info += ` <li class = "item"> 
+        <a href = "detail-track.html?id=${inf[i].id}"><h4> ${inf[i].title} </h4></a>
+        <div> <button onClick="agregarFavoritos(${inf[i].id},${i})">
+        <i class="fa-solid fa-heart-circle-plus"></i>
+        </button>  </div>
+        </li>
+         `
+
     }
     console.log(info);
     tracks.innerHTML += info
 
 
 
-    for (let i=0; i <inf.length; i ++){
-        let favoritos = [];
-        let recuperoStorage= localStorage.getItem("favoritos");
+
+    let favoritos = [];
+    let recuperoStorage= localStorage.getItem("favoritos");
         
         if(recuperoStorage){
             favoritos= JSON.parse(recuperoStorage);
             favoritosdos= favoritos;
         }
         let as = document.querySelector (".tarot");
-        if(favoritos.includes (idUrl)){
+        if(favoritos.includes(idUrl)){
             as.innerText = "Sacar de Favoritos"
         }
-        as.addEventListener ("click", function(evento){
-            evento.preventDefault()
-            if(favoritos.includes (idUrl)){
-                let sacar = favoritos.indexOf(idUrl);
+        let botones =document.querySelectorAll ("button")
+        console.log(botones);
+        for (let i = 1; i< botones.length; i++) {
+            botones [i].addEventListener("click", agregarFavoritos(inf[i].id, i))
+            
+        }
+        function agregarFavoritos (id, pos) {
+            if(favoritos.includes (id)){
+                let sacar = favoritos.indexOf(id);
                 favoritos.splice (sacar, 1);
-                as.innerText = "agregar a favoritos"
+                botones[i].innerText = "agregar a favoritos"
             }else{
-            favoritos.push (idUrl)
-            as.innerText = "Sacar de Favoritos"
+            favoritos.push (id)
+            botones[i].innerText = "Sacar de Favoritos"
+            }
+        
         }
+        
 
         //agergar arrat a local Stograge y pasar a string//
         let gifToString = JSON.stringify(favoritos)
         localStorage.setItem("favoritos", gifToString)
 
         console.log(localStorage.getItem("favoritos"));
-    })
 
 
-    }
+
 
     
 })

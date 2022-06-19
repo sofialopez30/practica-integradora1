@@ -45,8 +45,8 @@ fetch (urlDeezer)
 
 
     name.innerHTML += `  ${data.title}</a> `
-    nomart.innerHTML += `<p><a href="./detail-artist.html?q=${data.artist.id}">${data.artist.name}</a></p>`
-    nombredisco.innerHTML += `</p><a class "href" href= "./detail-album.html?q=${data.album.id}""> ${data.title}</a>`
+    nomart.innerHTML += `<p><a href="./detail-artist.html?id=${data.artist.id}">${data.artist.name}</a></p>`
+    nombredisco.innerHTML += `</p><a class "href" href= "./detail-album.html?id=${data.album.id}""> ${data.title}</a>`
     iframe.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${idUrl}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
     
     
