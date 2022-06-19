@@ -3,13 +3,17 @@ let messi= document.querySelector(".input")
 
 hola.addEventListener('submit', function (event) {
     event.preventDefault()
-    if(messi.value.length >= 3 ){
-        this.submit()
-    }else{
+    console.log("error");
+    if(messi.value.length == "" ){
+        alert ("Que deseas buscar?")
+    }else if(messi.value.length <= 2){
         alert ('Poner al menos tres caracteres')
-    }
+    } else{
+        this.submit()
+      }
     
 })
+
 
 let queryString = location.search;
 let queryStringObt= new URLSearchParams (queryString);
