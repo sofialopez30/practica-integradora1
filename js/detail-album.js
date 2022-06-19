@@ -36,8 +36,8 @@ fetch (detailAlbum)
 
     let vamo= "";
 
-    mando.src=data.cover_medium;
-    name.innerHTML += `<a href="detail-artist.html?q=${data.artist.id}">${data.artist.name}</a>`;
+    mando.src=data.cover_medium; 
+    name.innerHTML += `<a href="detail-artist.html?id=${data.artist.id}"> `//${data.artist.name}</a>`;
     //+= `<a href="detail-artist.html?id=${data.artist.id}">${data.artist.name}</a>`;
     veremos.innerHTML= data.title;
     color.innerHTML= "Duration:" + " " + data.duration;
