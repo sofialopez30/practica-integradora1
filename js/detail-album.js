@@ -37,11 +37,13 @@ fetch (detailAlbum)
     let lista= document.querySelector (".lista");
     let rato = document.querySelector (".rato");
     let zz= document.querySelector (".neverita");
+    let lol = document.querySelector (".lol")
 
     let vamo= "";
 
     mando.src=data.cover_medium; 
-    name.innerHTML += `<a href="detail-artist.html?id=${data.artist.id}"> `//${data.artist.name}</a>`;
+    name.innerHTML += `<a href="detail-artist.html?id=${data.artist.id}"> </a>  `//${data.artist.name}</a>`;
+    lol.innerHTML += `<p> ${data.artist.name}</p>`
     //+= `<a href="detail-artist.html?id=${data.artist.id}">${data.artist.name}</a>`;
     veremos.innerHTML= data.title;
     color.innerHTML= "Duration:" + " " + data.duration;
