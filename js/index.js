@@ -1,9 +1,9 @@
 let hola= document.querySelector("form")
-let messi= document.querySelector("input")
+let messi= document.querySelector(".input")
 
 hola.addEventListener('submit', function (event) {
     event.preventDefault()
-    if(messi.value.length >=3 ){
+    if(messi.value.length >= 3 ){
         this.submit()
     }else{
         alert ('Poner al menos tres caracteres')
@@ -12,7 +12,7 @@ hola.addEventListener('submit', function (event) {
 })
 
 let ver= document.querySelector (".probando ");
-let lol="https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/tracks"
+let lol="https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks"
 
 fetch (lol)
 .then (function(response){

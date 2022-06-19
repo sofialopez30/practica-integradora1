@@ -1,8 +1,23 @@
+
+let hola= document.querySelector("form")
+let messi= document.querySelector(".input")
+
+hola.addEventListener('submit', function (event) {
+    event.preventDefault()
+    if(messi.value.length >= 3 ){
+        this.submit()
+    }else{
+        alert ('Poner al menos tres caracteres')
+    }
+    
+})
+
+
 let queryString = location.search;
 let queryStringObt= new URLSearchParams (queryString);
 let idUrl = queryStringObt.get ("id");
 
-let urlDeezer = "https://api.allorigins.win/raw?url=https://api.deezer.com/artist/" + idUrl
+let urlDeezer = "/https://cors-anywhere.herokuapp.comhttps://api.deezer.com/artist/" + idUrl
 
 fetch (urlDeezer)
 .then (function (response) {
@@ -22,7 +37,7 @@ fetch (urlDeezer)
     console.log ("Error: " + error);
 })
 
-let urlDeezer2 = "https://api.allorigins.win/raw?url=https://api.deezer.com/artist/" + idUrl+ "/albums"
+let urlDeezer2 = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/" + idUrl+ "/albums"
 
 fetch (urlDeezer2)
 .then (function(response){

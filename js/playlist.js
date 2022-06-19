@@ -18,7 +18,7 @@ let seccion = document.querySelector (".neverita");
 let contSeccion ="";
 
 for(let i=0; i<recuperoStorageToArray.length; i++){
-    let urlCanciones = 'https://api.deezer.com/track/${recuperoStorageToArray[i]}?api_key=bb8ee8ab1613be3e27a191a49fca730f'
+    let urlCanciones = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${recuperoStorageToArray[i]}?api_key=bb8ee8ab1613be3e27a191a49fca730f'
     
     fetch(urlCanciones)
         .then(function(response){
@@ -33,7 +33,7 @@ for(let i=0; i<recuperoStorageToArray.length; i++){
                                     <p class= "song"> Cancion: ${data.title}
                             </article>`
 
-                            section.innerHTML = contSeccion
+                            section.innerHTML += contSeccion
 
         })
         .catch(function(error){
