@@ -59,28 +59,20 @@ fetch (urlDeezer)
     let xd= document.querySelector("#xd")
 
     let neverita = [];
-    let recupero = localStorage.getItem ("neverita")
     let alf = document.querySelector (".neverita")
 
-    if (recupero === "" || recupero === null) {
-        recupero = "[]"
-    }
-    console.log(recupero);
-
-    if(recupero){
-        neveritados= JSON.parse(recupero)
-        neveritados = neverita
+    if(localStorage.getItem('neverita') && localStorage.getItem('neverita') != null){
+        neverita = JSON.parse(localStorage.getItem('neverita'));
     }
     
     if(neverita.includes(idUrl)){
-        alf.innerText = "Remover de playlist"
+        xd.innerText = "Remover de playlist"
     }
     xd.addEventListener ("click", function(evento){
         evento.preventDefault()
     
         if(neverita.includes(idUrl)){
-            let sacar = neverita.indexOf(idUrl)
-            neverita.splice (sacar,1)
+            neverita.splice (neverita.indexOf(idUrl),1)
             xd.innerText = 'agregar a playlist'
         } else {
             neverita.push (idUrl)

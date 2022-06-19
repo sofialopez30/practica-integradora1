@@ -17,7 +17,7 @@ recuperoStorageToArray = JSON.parse(recuperoStorage);
 let seccion = document.querySelector (".neverita");
 let contSeccion ="";
 
-
+console.log (recuperoStorageToArray);
 for(let i=0; i<recuperoStorageToArray.length; i++){
 
     let urlCanciones = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/' + recuperoStorageToArray[i];
