@@ -50,7 +50,7 @@ fetch (lol)
 })
 
 let ese = document.querySelector ('.mmm')
-let dd = 'https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/albums'
+let dd = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums"
 
 fetch (dd)
 .then (function(response){
@@ -86,7 +86,7 @@ fetch (dd)
 
 })
 let eses = document.querySelector ('.sss')
-let ddd = 'https://api.allorigins.win/raw?url=https://api.deezer.com/chart/0/artists'
+let ddd = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists"
 
 fetch (ddd)
 .then (function(response){

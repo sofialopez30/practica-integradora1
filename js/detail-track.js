@@ -27,6 +27,7 @@ fetch (urlDeezer)
     let name = document.querySelector (".nom");
     let nomart = document.querySelector (".nomart");
     let nombredisco = document.querySelector (".nombredisco");
+    let iframe = document.querySelector (".iframe")
     
 
     picture.src= data.album.cover_big
@@ -43,10 +44,17 @@ fetch (urlDeezer)
     </article> */
 
 
-    name.innerHTML += ` <p><a href="./detail-album.html?q=${data.album.id}">Album: ${data.album.title}</a>`
-   // </p><a class "href" href= "./detail-album.html?q=${data.id}""> ${data.title}</a>
-    nomart.innerHTML = data.artist.name
-    nombredisco.innerHTML = data.album.title
+    name.innerHTML += `  ${data.title}</a> `
+    nomart.innerHTML += `<p><a href="./detail-artist.html?q=${data.artist.id}">${data.artist.name}</a></p>`
+    nombredisco.innerHTML += `</p><a class "href" href= "./detail-album.html?q=${data.album.id}""> ${data.title}</a>`
+    iframe.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${idUrl}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
+    
+    
+    
+    
+    //<a href="./detail-album.html?q=${data.album.id}">
+    //nomart.innerHTML = data.artist.name
+    //nombredisco.innerHTML = data.album.title
 
     let xd= document.querySelector("#xd")
 
