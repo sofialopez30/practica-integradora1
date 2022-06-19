@@ -30,13 +30,13 @@ for(let i=0; i<recuperoStorageToArray.length; i++){
             console.log(data);
 
             contSeccion += `<article>
-                                    <img class="image" src="${data.contributors.picture_small}" alt="">
-                                    <p class="name"> <a href="detail-artist.html?id= ${data.contributors.id}</a> Artista: ${data.contributors.name}</p>
+                                    <img class="image" src="${data.artist.picture_small}" alt="">
+                                    <p class="name"> <a href="detail-artist.html?id= ${data.artist.id}</a> Artista: ${data.artist.name}</p>
                                     <p class= "song"> Cancion: ${data.title}
                             </article>`
             
 
-                            seccion.innerHTML += contSeccion
+                            seccion.innerHTML = contSeccion
 
         })
         .catch(function(error){
