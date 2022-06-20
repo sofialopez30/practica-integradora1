@@ -27,10 +27,10 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${idUrl}
     let elementosListados = ''
 
 
-    for (let i=0; i<1; i++){
-        elementosListados += `<article class=detalleGeneros>
-        <p>Genero: ${data.name}</p>
-        <img class="fotosgeneros" src="${data.picture_medium}" alt="">
+    for (let i=0; i<data.data.length; i++){
+        elementosListados += `<article class=generosmiau>
+        <p>${data.data[i].name}</p>
+        <img class="fotosgeneros" src="${data.data[i].picture}" alt="">
         </article>`
     }
     console.log(elementosListados);

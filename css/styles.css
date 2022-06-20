@@ -288,6 +288,16 @@ a:link, a:visited, a:active{
     width: 200px;
     text-align: center;
 }
+.generosmiau{
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    background-color: #071E22;
+    background: linear-gradient(to bottom, #071E22, #2200ff5a);
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
 
 /*detalle artista*/
 
