@@ -109,6 +109,6 @@ fetch (detailAlbum)
     console.log(error);
 })
 
-//<a href="playlist.html" type="submit">Agregar a Playlist <i class="fa-solid fa-heart-circle-plus"></i> 
+
 
 
