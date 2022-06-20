@@ -75,16 +75,26 @@
 }
 
 .quieroLlorar {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     align-items: center;
 }
 
 .puedeAndar {
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     list-style: none;
     display: flex;
+    justify-content: center;
+}
+
+.nombreArtista {
+    font-size: 45px;
+}
+
+.manzana {
+    font-size: 30px;
+    color: #0fff20;
 }
 
 
