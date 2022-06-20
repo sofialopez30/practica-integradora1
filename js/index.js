@@ -31,7 +31,7 @@ fetch (lol)
     for(let i=0; i<5; i++){
         let lista= ""
         characters += `
-        <article >
+        <article class= "melon" >
         <a href="detail-album.html?id=${info[i].album.id}"> <h4 class=moscow> ${info[i].album.title}</h4> </a>
         <a href="detail-artist.html?id=${info[i].artist.id}"> <p class = mule> ${info[i].artist.name}</p> </a>
     
