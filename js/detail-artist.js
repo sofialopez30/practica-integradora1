@@ -34,7 +34,7 @@ fetch (urlDeezer)
 
     picture.src = data.picture;
     name.innerHTML = data.name;
-    name.style.color = "#0fff20";
+    name.style.color = "#00fdff";
 })
 .catch (function(error) {
     console.log ("Error: " + error);
@@ -54,7 +54,7 @@ fetch (urlDeezer2)
     let discos = "";
 
     for (let i=0; i<5; i++) {
-        discos += `<li> <a href="detail-album.html?id=${info[i].id}"> ${info[i].title} </a> </li>`
+        discos += `<li class ="puedeAndar" > <a href="detail-album.html?id=${info[i].id}"> ${info[i].title} </a> </li>`
     }
 
     console.log (discos);
