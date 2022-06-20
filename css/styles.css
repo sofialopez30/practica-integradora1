@@ -62,6 +62,31 @@
     text-align: center;
 }
 
+/* detalle de artista js */
+
+
+.noo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.quieroLlorar {
+    height: 250px;
+    width: 250px;
+    align-items: center;
+}
+
+.puedeAndar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+}
+
 
 /*fin de css de js*/
 body {
@@ -524,3 +549,4 @@ a:link, a:visited, a:active{
         height: 50%;
     }
 }
+
