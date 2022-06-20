@@ -45,7 +45,7 @@ fetch (detailAlbum)
     veremos.innerHTML= `<a href="detail-artist.html?id=${data.artist.id}"><p> ${data.title}</p></a>  `;
     color.innerHTML= "Duration:" + " " + data.duration;
     bonito.innerHTML= "Release date:"+ " "+ data.release_date ;
-    rato.innerHTML += `<a href= "detail-genres.html?id=${data.genres.id}"> ${data.genres.data [0].name} </a>`;
+    rato.innerHTML += `<a href= "detail-genres.html?id=${data.genres.data[0].id}"> ${data.genres.data [0].name} </a>`;
     
     let inf= data.tracks.data
     let tracks= document.querySelector (".funcioname");
