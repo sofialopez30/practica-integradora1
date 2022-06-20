@@ -14,9 +14,9 @@ hola.addEventListener('submit', function (event) {
 let querystring =location.search;
 let querystringObt = new URLSearchParams(querystring);
 let idUrl =querystringObt.get("id");
-let urlApi = "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/" + idUrl
 
-fetch(urlApi)
+
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/${idUrl}/artists`)
 .then(function(response){
     return response.json();
 })
