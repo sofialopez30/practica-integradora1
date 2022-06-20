@@ -64,20 +64,20 @@
 
 /* detalle de artista js */
 
-
 .noo {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    margin-left: 560px;
 }
 
 .quieroLlorar {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     align-items: center;
+    margin-left: -50px;
 }
 
 .puedeAndar {
@@ -85,11 +85,12 @@
     font-size: 20px;
     list-style: none;
     display: flex;
-    justify-content: center;
+
 }
 
 .nombreArtista {
     font-size: 45px;
+    margin-left: 40px;
 }
 
 .manzana {
@@ -97,6 +98,33 @@
     color: #0fff20;
 }
 
+/* playlist*/
+
+.playlist {
+    font-size: 50px;
+    color:  #00fdff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imageUwu {
+    height: 100px;
+    width: 100px;
+    padding: 0px 10px 0px 0px;
+}
+
+.dejoLaCarrera {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.song {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+}
 
 /*fin de css de js*/
 body {
