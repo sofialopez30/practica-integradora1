@@ -37,24 +37,20 @@ fetch (urlDeezer)
     <a href="./detail-album.html" class="albumde">  </a>
     <a href="./detail-album.html" class="albumde"><br> ${tracks.album.title} </a>
     <br>
-    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${idCancion}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${idCancion}" width="100%" height="150 px" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
     <br>
     <br>
     
     </article> */
 
 
-    name.innerHTML += `  ${data.title}</a> `
-    nomart.innerHTML += `<p><a href="./detail-artist.html?id=${data.artist.id}">${data.artist.name}</a></p>`
-    nombredisco.innerHTML += `</p><a class "href" href= "./detail-album.html?id=${data.album.id}""> ${data.title}</a>`
-    iframe.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${idUrl}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
+    name.innerHTML += `<h3> ${data.title}</h3>`
+    nomart.innerHTML += `<a class= "duele" href="./detail-artist.html?id=${data.artist.id}">${data.artist.name}</a>`
+    nombredisco.innerHTML += `</p><a class "duele" href= "./detail-album.html?id=${data.album.id}""> ${data.title}</a>`
+    iframe.innerHTML += `<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${idUrl}" width="100%" height="170px" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
     
     
-    
-    
-    //<a href="./detail-album.html?q=${data.album.id}">
-    //nomart.innerHTML = data.artist.name
-    //nombredisco.innerHTML = data.album.title
+
 
     let xd= document.querySelector("#xd")
 
@@ -96,37 +92,6 @@ fetch (urlDeezer)
 })
 
 
-    
-/* let neverita = [];
-let recupero = localStorage.getItem ("neverita")
-let alf = document.querySelector (".neverita")
-
-if(recupero){
-    neverita= JSON.parse(recupero)
-    neveritados= neverita
-}
-
-if(neverita.includes(idUrl)){
-    alf.innerText = "Remover de playlist"
-}
-alf.addEventListener ("click", function(evento){
-    evento.preventDefault()
-
-    if(neverita.includes(idUrl)){
-        let sacar = neverita.indexOf(idUrl)
-        neverita.splice (sacar,1)
-        alf.innerText = 'agregar a playlist'
-    } else {
-        neverita.push (idUrl)
-        alf.innerText = 'Remover de playlist'
-    }
-    let gifToStrings = JSON.stringify(neverita)
-    localStorage.setItem("neverita", gifToStrings)
-
-    console.log(localStorage.getItem("neverita"));
-
-    
-}) */
 
 
 

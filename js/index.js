@@ -30,8 +30,10 @@ fetch (lol)
         let lista= ""
         characters += `
         <article >
-        <p class = moscow > ${info[i].album.title}</p>
-        <p class= mule>${info[i].artist.name} </p>
+        <a href="detail-album.html?id=${info[i].album.id}"> <h4 class=moscow> ${info[i].album.title}</h4> </a>
+        <a href="detail-artist.html?id=${info[i].artist.id}"> <p class = mule> ${info[i].artist.name}</p> </a>
+    
+        
         <img class= titi src= ${info[i].artist.picture_medium} alt = "" />
         <br>
         <a href="./detail-track.html?id=${info[i].id} "> Ir a detalle </a>
@@ -42,7 +44,7 @@ fetch (lol)
     console.log(characters);
     ll.innerHTML += characters;
 
-    
+
 })
 .catch(function(error){
     console.log(error)
@@ -68,8 +70,9 @@ fetch (dd)
         let lista= ""
         rs += `
         <article>
-        <p> ${info[i].artist.name}</p>
-        <p> ${info[i].title}</p>
+        <a href="detail-artist.html?id=${info[i].artist.id}"> <p> ${info[i].artist.name}</p> </a>
+        <a href ="detail-album.html?id= ${info[i].id}"> <p> ${info[i].title}</p> </a>
+       
         <img src= ${info[i].cover_medium} alt = "" />
         <br>
         <a href="./detail-album.html?id=${info[i].id} "> Ir a detalle </a>
@@ -94,7 +97,7 @@ fetch (ddd)
 })
 .then (function(data){
     console.log(data);
-    
+
     let info = data.data
     let lls = document.querySelector (".sss");
     let rs= "";
@@ -104,7 +107,8 @@ fetch (ddd)
         let lista= ""
         rs += `
         <article>
-        <p> ${info[i].name}</p>
+        <a href="detail-artist.html?id=${info[i].id}"> <p> ${info[i].name}</p> </a>
+        
         <img src= ${info[i].picture_medium} alt = "" />
         <br>
         <a href="./detail-artist.html?id=${info[i].id} "> Ir a detalle </a>
