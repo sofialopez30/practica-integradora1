@@ -2,8 +2,7 @@ let hola= document.querySelector("form")
 let messi= document.querySelector(".input")
 
 hola.addEventListener('submit', function (event) {
-    event.preventDefault()
-    console.log("error");
+    event.preventDefault();
     if(messi.value.length == "" ){
         alert ("Que deseas buscar?")
     }else if(messi.value.length <= 2){
