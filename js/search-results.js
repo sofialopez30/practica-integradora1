@@ -18,7 +18,7 @@ let queryStringObt= new URLSearchParams (queryString);
 let idUrl = queryStringObt.get ("busqueda");
 
 
-let detailAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q=${idUrl}`;
+let detailAlbum = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${idUrl}`;
 
 fetch (detailAlbum)
 .then (function(response){
@@ -37,16 +37,21 @@ fetch (detailAlbum)
         probar.innerHTML = "Estos son todos los resultados para" + " " + idUrl
     }
 
-
     for (let i= 0; i< buscar.length; i++){
         artistSearch.innerHTML += `
+        <section class ="listo">
+        <div class ="loro">
         <img src= "${buscar[i].album.cover_medium}" alt=""> 
         <br>
-        <a href = "detail-track.html?id=${buscar[i].album.id}> <p>${buscar[i].title}</p></a>
+        </div>
+        <article class="pollo">
+        <a class = "mecanse" href="./detail-artist.html?id=${buscar[i].artist.id}">${buscar[i].artist.name}</a>
+        <br> </br> 
+        <a class="mecanse" href="./detail-track.html?id=${buscar[i].id}">${buscar[i].title}</a> 
         <br>
-        <a href = "detail-track.html?id=${buscar[i].id}> <p> ${buscar[i].title} </p> </a>
         <br>
-        <br>`
+        </article>
+        </section>`
     } 
 
 })

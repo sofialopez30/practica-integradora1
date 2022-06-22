@@ -39,8 +39,6 @@ for(let i=0; i<recuperoStorageToArray.length; i++){
 
                             seccion.innerHTML = contSeccion
 
-//hacer for con i menor a arrayDiscos.lenth y hacer fecth a detalle de disco.  Andentro del for hacer otro for con fectch al endopint de detalle e cancion con id sacado del fecth a detalle de disco
-//tracks es un array y ahi estan adentro de cada disco 
         })
         .catch(function(error){
             console.log(error);

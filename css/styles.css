@@ -126,6 +126,18 @@
     margin-top: 40px;
 }
 
+.mecanse{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.loro{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 /*fin de css de js*/
 body {
     background-color: black;

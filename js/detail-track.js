@@ -34,16 +34,6 @@ fetch (urlDeezer)
 
     picture.src= data.album.cover_big
     
-   /* <a href="" class="nombretema"><br> ${tracks.title} </a>
-    <a href="./detail-artist.html" class="nombretema"><br> ${tracks.artist.name} </a>
-    <a href="./detail-album.html" class="albumde">  </a>
-    <a href="./detail-album.html" class="albumde"><br> ${tracks.album.title} </a>
-    <br>
-    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${idCancion}" width="100%" height="150 px" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
-    <br>
-    <br>
-    
-    </article> */
 
 
     name.innerHTML += `<h3> ${data.title}</h3>`
@@ -57,7 +47,6 @@ fetch (urlDeezer)
     let xd= document.querySelector("#xd")
 
     let neverita = [];
-    let alf = document.querySelector (".neverita")
 
     if(localStorage.getItem('neverita') && localStorage.getItem('neverita') != null){
         neverita = JSON.parse(localStorage.getItem('neverita'));
