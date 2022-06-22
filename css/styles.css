@@ -372,6 +372,8 @@ a:link, a:visited, a:active{
     .navegacion{
         font-size:100%;
         width:100vw;
+        justify-content: center;
+        text-align: center;
         display:flex;
         flex-wrap:wrap;
         flex-direction:column;
