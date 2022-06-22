@@ -4,7 +4,9 @@
 /* css de js*/
 /* css de index*/
 
-
+.moscow{
+    width: 300px;
+}
 
 .mule{
     font-size: 15px;
@@ -60,6 +62,98 @@
     text-align: center;
 }
 
+/* detalle de artista js */
+
+.noo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    margin-left: 560px;
+}
+
+.quieroLlorar {
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    margin-left: -50px;
+}
+
+.puedeAndar {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+
+}
+
+.listo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    line-height: normal;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    
+}
+
+
+
+
+.nombreArtista {
+    font-size: 45px;
+    margin-left: 40px;
+}
+
+.manzana {
+    font-size: 30px;
+    color: #0fff20;
+}
+
+/* playlist*/
+
+.playlist {
+    font-size: 50px;
+    color:  #00fdff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imageUwu {
+    height: 100px;
+    width: 100px;
+    padding: 0px 10px 0px 0px;
+}
+
+.dejoLaCarrera {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.song {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.mecanse{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.loro{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 /*fin de css de js*/
 body {
@@ -346,6 +440,9 @@ a:link, a:visited, a:active{
     padding: 5px;
     color: #0fff20; 
 }
+.efe{
+
+}
 
 @media (max-width: 420px){
 
@@ -524,3 +621,4 @@ a:link, a:visited, a:active{
         height: 50%;
     }
 }
+

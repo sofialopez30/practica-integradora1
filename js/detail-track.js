@@ -2,12 +2,14 @@ let hola= document.querySelector("form")
 let messi= document.querySelector(".input")
 
 hola.addEventListener('submit', function (event) {
-    event.preventDefault()
-    if(messi.value.length >= 3 ){
-        this.submit()
-    }else{
+    event.preventDefault();
+    if(messi.value.length == "" ){
+        alert ("Que deseas buscar?")
+    }else if(messi.value.length <= 2){
         alert ('Poner al menos tres caracteres')
-    }
+    } else{
+        this.submit()
+      }
     
 })
 
@@ -32,16 +34,6 @@ fetch (urlDeezer)
 
     picture.src= data.album.cover_big
     
-   /* <a href="" class="nombretema"><br> ${tracks.title} </a>
-    <a href="./detail-artist.html" class="nombretema"><br> ${tracks.artist.name} </a>
-    <a href="./detail-album.html" class="albumde">  </a>
-    <a href="./detail-album.html" class="albumde"><br> ${tracks.album.title} </a>
-    <br>
-    <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${idCancion}" width="100%" height="150 px" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
-    <br>
-    <br>
-    
-    </article> */
 
 
     name.innerHTML += `<h3> ${data.title}</h3>`
@@ -55,7 +47,6 @@ fetch (urlDeezer)
     let xd= document.querySelector("#xd")
 
     let neverita = [];
-    let alf = document.querySelector (".neverita")
 
     if(localStorage.getItem('neverita') && localStorage.getItem('neverita') != null){
         neverita = JSON.parse(localStorage.getItem('neverita'));

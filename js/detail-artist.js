@@ -3,12 +3,14 @@ let hola= document.querySelector("form")
 let messi= document.querySelector(".input")
 
 hola.addEventListener('submit', function (event) {
-    event.preventDefault()
-    if(messi.value.length >= 3 ){
-        this.submit()
-    }else{
+    event.preventDefault();
+    if(messi.value.length == "" ){
+        alert ("Que deseas buscar?")
+    }else if(messi.value.length <= 2){
         alert ('Poner al menos tres caracteres')
-    }
+    } else{
+        this.submit()
+      }
     
 })
 
@@ -32,7 +34,7 @@ fetch (urlDeezer)
 
     picture.src = data.picture;
     name.innerHTML = data.name;
-    name.style.color = "#0fff20";
+    name.style.color = "#00fdff";
 })
 .catch (function(error) {
     console.log ("Error: " + error);
@@ -52,7 +54,7 @@ fetch (urlDeezer2)
     let discos = "";
 
     for (let i=0; i<5; i++) {
-        discos += `<li> <a href="detail-album.html?id=${info[i].id}"> ${info[i].title} </a> </li>`
+        discos += `<li class ="puedeAndar" > <a href="detail-album.html?id=${info[i].id}"> ${info[i].title} </a> </li>`
     }
 
     console.log (discos);

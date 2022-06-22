@@ -2,8 +2,7 @@ let hola= document.querySelector("form")
 let messi= document.querySelector(".input")
 
 hola.addEventListener('submit', function (event) {
-    event.preventDefault()
-    console.log("error");
+    event.preventDefault();
     if(messi.value.length == "" ){
         alert ("Que deseas buscar?")
     }else if(messi.value.length <= 2){
@@ -46,7 +45,7 @@ fetch (detailAlbum)
     veremos.innerHTML= `<a href="detail-artist.html?id=${data.artist.id}"><p> ${data.title}</p></a>  `;
     color.innerHTML= "Duration:" + " " + data.duration;
     bonito.innerHTML= "Release date:"+ " "+ data.release_date ;
-    rato.innerHTML += `<a href= "detail-genres.html?id=${data.genres.id}"> ${data.genres.data [0].name} </a>`;
+    rato.innerHTML += `<a href= "detail-genres.html?id=${data.genres.data[0].id}"> ${data.genres.data [0].name} </a>`;
     
     let inf= data.tracks.data
     let tracks= document.querySelector (".funcioname");
@@ -110,6 +109,6 @@ fetch (detailAlbum)
     console.log(error);
 })
 
-//<a href="playlist.html" type="submit">Agregar a Playlist <i class="fa-solid fa-heart-circle-plus"></i> 
+
 
 

@@ -2,12 +2,14 @@ let hola= document.querySelector("form")
 let messi= document.querySelector(".input")
 
 hola.addEventListener('submit', function (event) {
-    event.preventDefault()
-    if(messi.value.length >= 3 ){
-        this.submit()
-    }else{
+    event.preventDefault();
+    if(messi.value.length == "" ){
+        alert ("Que deseas buscar?")
+    }else if(messi.value.length <= 2){
         alert ('Poner al menos tres caracteres')
-    }
+    } else{
+        this.submit()
+      }
     
 })
 
@@ -30,16 +32,13 @@ for(let i=0; i<recuperoStorageToArray.length; i++){
         .then(function(data){
             console.log(data);
 
-            contSeccion += `<article>
-                                    <img class="image" src="${data.artist.picture_small}" alt="">
-                                    <p class="name"> <a href="detail-artist.html?id= ${data.artist.id}</a> Artista: ${data.artist.name}</p>
-                                    <p class= "song"> Cancion: ${data.title}
+            contSeccion += `<article class="dejoLaCarrera">
+                                    <img class="imageUwu" src="${data.artist.picture_small}" alt="">
+                                    <p class= "song"><a href="detail-track.html?id=${data.id}">${data.title}</a>  </p>
                             </article>`
-            
 
                             seccion.innerHTML = contSeccion
-//hacer for con i menor a arrayDiscos.lenth y hacer fecth a detalle de disco.  Andentro del for hacer otro for con fectch al endopint de detalle e cancion con id sacado del fecth a detalle de disco
-//tracks es un array y ahi estan adentro de cada disco 
+
         })
         .catch(function(error){
             console.log(error);
@@ -47,5 +46,4 @@ for(let i=0; i<recuperoStorageToArray.length; i++){
 
         }
 
-
-
+        

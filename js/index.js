@@ -2,12 +2,14 @@ let hola= document.querySelector("form")
 let messi= document.querySelector(".input")
 
 hola.addEventListener('submit', function (event) {
-    event.preventDefault()
-    if(messi.value.length >= 3 ){
-        this.submit()
-    }else{
+    event.preventDefault();
+    if(messi.value.length == "" ){
+        alert ("Que deseas buscar?")
+    }else if(messi.value.length <= 2){
         alert ('Poner al menos tres caracteres')
-    }
+    } else{
+        this.submit()
+      }
     
 })
 
@@ -29,7 +31,7 @@ fetch (lol)
     for(let i=0; i<5; i++){
         let lista= ""
         characters += `
-        <article >
+        <article class= "melon" >
         <a href="detail-album.html?id=${info[i].album.id}"> <h4 class=moscow> ${info[i].album.title}</h4> </a>
         <a href="detail-artist.html?id=${info[i].artist.id}"> <p class = mule> ${info[i].artist.name}</p> </a>
     
