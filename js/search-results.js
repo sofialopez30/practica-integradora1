@@ -40,11 +40,9 @@ fetch (detailAlbum)
     for (let i= 0; i< buscar.length; i++){
         artistSearch.innerHTML += `
         <section class ="listo">
-        <div class ="loro">
-        <img src= "${buscar[i].album.cover_medium}" alt=""> 
-        <br>
-        </div>
         <article class="pollo">
+        <img class "loro" src= "${buscar[i].album.cover_medium}" alt=""> 
+        <br>
         <a class = "mecanse" href="./detail-artist.html?id=${buscar[i].artist.id}">${buscar[i].artist.name}</a>
         <br> </br> 
         <a class="mecanse" href="./detail-track.html?id=${buscar[i].id}">${buscar[i].title}</a> 

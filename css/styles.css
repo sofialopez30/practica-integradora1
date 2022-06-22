@@ -88,21 +88,6 @@
 
 }
 
-.listo{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    list-style-type: none;
-    line-height: normal;
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    
-}
-
-
 
 
 .nombreArtista {
@@ -147,13 +132,18 @@
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 }
-.loro{
-    width: 300px;
+.artistSearch{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
 }
+.search{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color:#F433AB;
+}
+
 
 /*fin de css de js*/
 body {
@@ -440,9 +430,7 @@ a:link, a:visited, a:active{
     padding: 5px;
     color: #0fff20; 
 }
-.efe{
 
-}
 
 @media (max-width: 420px){
 
